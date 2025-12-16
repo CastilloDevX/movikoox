@@ -1,0 +1,5278 @@
+[
+    {
+      "id": 1,
+      "nombre": "Alameda",
+      "latitud": 19.841517,
+      "longitud": -90.534564,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 27 Troncal Eje Central",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Chihuahua",
+      "latitud": 19.843134,
+      "longitud": -90.530806,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 15 Jardines",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Terminal Segunda Sur",
+      "latitud": 19.843159,
+      "longitud": -90.527426,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 15 Jardines",
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Venezuela",
+      "latitud": 19.843017,
+      "longitud": -90.524029,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Ecuador",
+      "latitud": 19.842931,
+      "longitud": -90.521759,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Ejército Mexicano",
+      "latitud": 19.842793,
+      "longitud": -90.518059,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 09 Bellavista-San José el Alto",
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 7,
+      "nombre": "Héroe de Nacozari",
+      "latitud": 19.8427,
+      "longitud": -90.51615,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 8,
+      "nombre": "Hidalgo",
+      "latitud": 19.842438,
+      "longitud": -90.512033,
+      "rutas": []
+    },
+    {
+      "id": 9,
+      "nombre": "Calle 105-A",
+      "latitud": 19.842192,
+      "longitud": -90.508463,
+      "rutas": []
+    },
+    {
+      "id": 10,
+      "nombre": "La Huayita",
+      "latitud": 19.842031,
+      "longitud": -90.506114,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1"
+      ]
+    },
+    {
+      "id": 11,
+      "nombre": "Pablo García",
+      "latitud": 19.843452,
+      "longitud": -90.503114,
+      "rutas": []
+    },
+    {
+      "id": 12,
+      "nombre": "Álvaro Obregón",
+      "latitud": 19.843619,
+      "longitud": -90.503215,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 13,
+      "nombre": "Calle 116",
+      "latitud": 19.842351,
+      "longitud": -90.507829,
+      "rutas": []
+    },
+    {
+      "id": 14,
+      "nombre": "Calle 114",
+      "latitud": 19.842569,
+      "longitud": -90.51069,
+      "rutas": []
+    },
+    {
+      "id": 15,
+      "nombre": "Cuauhtémoc",
+      "latitud": 19.842912,
+      "longitud": -90.516175,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 16,
+      "nombre": "Uruguay",
+      "latitud": 19.843124,
+      "longitud": -90.521817,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 17,
+      "nombre": "Argentina",
+      "latitud": 19.84326,
+      "longitud": -90.524368,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 18,
+      "nombre": "Brasil",
+      "latitud": 19.843368,
+      "longitud": -90.527729,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 15 Jardines",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 19,
+      "nombre": "Circuito Baluartes",
+      "latitud": 19.843275,
+      "longitud": -90.531607,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 15 Jardines",
+        "Koox 16 Polvorín - Paso de las Águilas",
+        "Koox 18 San Francisco",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 20,
+      "nombre": "Mercado",
+      "latitud": 19.842447,
+      "longitud": -90.534081,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 21,
+      "nombre": "Paso de Ronda",
+      "latitud": 19.840434,
+      "longitud": -90.537266,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 22,
+      "nombre": "Pedro Moreno",
+      "latitud": 19.838979,
+      "longitud": -90.538881,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 23,
+      "nombre": "Galena Norte",
+      "latitud": 19.836959,
+      "longitud": -90.54104,
+      "rutas": []
+    },
+    {
+      "id": 24,
+      "nombre": "Allende Norte",
+      "latitud": 19.835742,
+      "longitud": -90.543221,
+      "rutas": []
+    },
+    {
+      "id": 25,
+      "nombre": "Victoria Norte",
+      "latitud": 19.834664,
+      "longitud": -90.545157,
+      "rutas": []
+    },
+    {
+      "id": 26,
+      "nombre": "Justo Sierra",
+      "latitud": 19.833362,
+      "longitud": -90.547505,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal"
+      ]
+    },
+    {
+      "id": 27,
+      "nombre": "Manguitos Norte",
+      "latitud": 19.832597,
+      "longitud": -90.549553,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal"
+      ]
+    },
+    {
+      "id": 28,
+      "nombre": "Lazareto Norte",
+      "latitud": 19.832085,
+      "longitud": -90.553905,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal"
+      ]
+    },
+    {
+      "id": 29,
+      "nombre": "Universidad Norte",
+      "latitud": 19.829429,
+      "longitud": -90.555421,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 30,
+      "nombre": "Juan Escutia",
+      "latitud": 19.829889,
+      "longitud": -90.559664,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 31,
+      "nombre": "Fovi",
+      "latitud": 19.828642,
+      "longitud": -90.561883,
+      "rutas": [
+        "Koox 22 Lerma - Tec"
+      ]
+    },
+    {
+      "id": 32,
+      "nombre": "ISSSTE",
+      "latitud": 19.826034,
+      "longitud": -90.563819,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 33,
+      "nombre": "Cendi Fovi",
+      "latitud": 19.826208,
+      "longitud": -90.56235,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 34,
+      "nombre": "Prevo",
+      "latitud": 19.827619,
+      "longitud": -90.55987,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 35,
+      "nombre": "Facultad de Humanidades",
+      "latitud": 19.829035,
+      "longitud": -90.557408,
+      "rutas": []
+    },
+    {
+      "id": 36,
+      "nombre": "Universidad Sur",
+      "latitud": 19.82934,
+      "longitud": -90.555204,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 37,
+      "nombre": "Lazareto Sur",
+      "latitud": 19.831998,
+      "longitud": -90.553712,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal"
+      ]
+    },
+    {
+      "id": 38,
+      "nombre": "Manguitos Sur",
+      "latitud": 19.832602,
+      "longitud": -90.549011,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal"
+      ]
+    },
+    {
+      "id": 39,
+      "nombre": "Abasolo",
+      "latitud": 19.833459,
+      "longitud": -90.546983,
+      "rutas": []
+    },
+    {
+      "id": 40,
+      "nombre": "Victoria Sur",
+      "latitud": 19.834627,
+      "longitud": -90.544917,
+      "rutas": []
+    },
+    {
+      "id": 41,
+      "nombre": "Allende Sur",
+      "latitud": 19.835618,
+      "longitud": -90.543116,
+      "rutas": []
+    },
+    {
+      "id": 42,
+      "nombre": "Galeana Sur",
+      "latitud": 19.83717,
+      "longitud": -90.540312,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal"
+      ]
+    },
+    {
+      "id": 43,
+      "nombre": "IMSS Centro",
+      "latitud": 19.840041,
+      "longitud": -90.537332,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 44,
+      "nombre": "Glorieta Pablo García Sur",
+      "latitud": 19.843716,
+      "longitud": -90.502728,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche",
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 45,
+      "nombre": "Vigésima sur",
+      "latitud": 19.835322,
+      "longitud": -90.483097,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 46,
+      "nombre": "Oxxo Central sur",
+      "latitud": 19.839521,
+      "longitud": -90.536253,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 47,
+      "nombre": "Oxxo Central norte",
+      "latitud": 19.839157,
+      "longitud": -90.53626,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 48,
+      "nombre": "Supermercado Central Sur",
+      "latitud": 19.837503,
+      "longitud": -90.535529,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 49,
+      "nombre": "Pescadería Ángel Sur",
+      "latitud": 19.833404,
+      "longitud": -90.534801,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 50,
+      "nombre": "Fracciorama Sur",
+      "latitud": 19.829664,
+      "longitud": -90.534886,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 51,
+      "nombre": "Supermercado Patricio Trueba Sur",
+      "latitud": 19.826134,
+      "longitud": -90.534562,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 52,
+      "nombre": "Casa de Justicia Sur",
+      "latitud": 19.824197,
+      "longitud": -90.533348,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 53,
+      "nombre": "Av.Patricio Trueba con Pedro Moreno",
+      "latitud": 19.820202,
+      "longitud": -90.530761,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 54,
+      "nombre": "Fac Medicina Sur",
+      "latitud": 19.818239,
+      "longitud": -90.529659,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 55,
+      "nombre": "Fiscalìa norte",
+      "latitud": 19.814708,
+      "longitud": -90.530616,
+      "rutas": []
+    },
+    {
+      "id": 56,
+      "nombre": "Paralímpico sur",
+      "latitud": 19.837627,
+      "longitud": -90.480638,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 57,
+      "nombre": "Lopez Portillo por Tepeyac",
+      "latitud": 19.814809,
+      "longitud": -90.533169,
+      "rutas": [
+        "Koox 24 Miguel hidalgo"
+      ]
+    },
+    {
+      "id": 58,
+      "nombre": "Calle Puente",
+      "latitud": 19.815772,
+      "longitud": -90.536895,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum",
+        "Koox 24 Miguel hidalgo",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 59,
+      "nombre": "Calle Libertad",
+      "latitud": 19.814474,
+      "longitud": -90.537766,
+      "rutas": [
+        "Koox 24 Miguel hidalgo"
+      ]
+    },
+    {
+      "id": 60,
+      "nombre": "Calle Juan de la Barrera",
+      "latitud": 19.812317,
+      "longitud": -90.537876,
+      "rutas": [
+        "Koox 24 Miguel hidalgo"
+      ]
+    },
+    {
+      "id": 61,
+      "nombre": "Calle 18",
+      "latitud": 19.809651,
+      "longitud": -90.537869,
+      "rutas": [
+        "Koox 24 Miguel hidalgo"
+      ]
+    },
+    {
+      "id": 62,
+      "nombre": "Residencial San Fco",
+      "latitud": 19.806217,
+      "longitud": -90.539503,
+      "rutas": [
+        "Koox 24 Miguel hidalgo"
+      ]
+    },
+    {
+      "id": 63,
+      "nombre": "Calle 22 por 5",
+      "latitud": 19.809541,
+      "longitud": -90.539664,
+      "rutas": [
+        "Koox 24 Miguel hidalgo"
+      ]
+    },
+    {
+      "id": 64,
+      "nombre": "Calle 5 por 14",
+      "latitud": 19.808805,
+      "longitud": -90.536775,
+      "rutas": [
+        "Koox 24 Miguel hidalgo"
+      ]
+    },
+    {
+      "id": 65,
+      "nombre": "San Valentín",
+      "latitud": 19.811733,
+      "longitud": -90.535644,
+      "rutas": [
+        "Koox 24 Miguel hidalgo"
+      ]
+    },
+    {
+      "id": 66,
+      "nombre": "Calle Guadalupe Víctoria",
+      "latitud": 19.81443,
+      "longitud": -90.534488,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum",
+        "Koox 24 Miguel hidalgo",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 67,
+      "nombre": "Glorieta exhacienda sur",
+      "latitud": 19.838612,
+      "longitud": -90.481103,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 68,
+      "nombre": "Fiscalia sur",
+      "latitud": 19.814483,
+      "longitud": -90.530217,
+      "rutas": [
+        "Koox 20 Chiná",
+        "Koox 24 Miguel hidalgo",
+        "Koox 26 Troncal Eje Hospitales",
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 69,
+      "nombre": "Fac de Medicina Norte",
+      "latitud": 19.81831,
+      "longitud": -90.529515,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 70,
+      "nombre": "Bancos Patricio Trueba",
+      "latitud": 19.821707,
+      "longitud": -90.531554,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 71,
+      "nombre": "Casa de justicia sur",
+      "latitud": 19.824751,
+      "longitud": -90.533581,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 72,
+      "nombre": "Supermercado Patricio Trueba",
+      "latitud": 19.826254,
+      "longitud": -90.534436,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 73,
+      "nombre": "Fracciorama norte",
+      "latitud": 19.829446,
+      "longitud": -90.534736,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 74,
+      "nombre": "CDC Kanisté sur",
+      "latitud": 19.820756,
+      "longitud": -90.553797,
+      "rutas": [
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 75,
+      "nombre": "Parque Kanisté sur",
+      "latitud": 19.816724,
+      "longitud": -90.555048,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 76,
+      "nombre": "Calle 23",
+      "latitud": 19.81532,
+      "longitud": -90.551821,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 77,
+      "nombre": "Cancha Samulá",
+      "latitud": 19.815348,
+      "longitud": -90.548233,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza"
+      ]
+    },
+    {
+      "id": 78,
+      "nombre": "Décima primera sur",
+      "latitud": 19.840908,
+      "longitud": -90.479667,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 79,
+      "nombre": "El Tamarindo",
+      "latitud": 19.814009,
+      "longitud": -90.547221,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza"
+      ]
+    },
+    {
+      "id": 80,
+      "nombre": "El Zapote",
+      "latitud": 19.811866,
+      "longitud": -90.545491,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza"
+      ]
+    },
+    {
+      "id": 81,
+      "nombre": "Calle 21 por 2A",
+      "latitud": 19.813544,
+      "longitud": -90.543949,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza"
+      ]
+    },
+    {
+      "id": 82,
+      "nombre": "Justo Sierra norte",
+      "latitud": 19.813606,
+      "longitud": -90.539656,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 83,
+      "nombre": "Venustiano Carranza",
+      "latitud": 19.815282,
+      "longitud": -90.540687,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 84,
+      "nombre": "Morelos",
+      "latitud": 19.817932,
+      "longitud": -90.540856,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 85,
+      "nombre": "Calle 11 por 2 norte",
+      "latitud": 19.819012,
+      "longitud": -90.543492,
+      "rutas": []
+    },
+    {
+      "id": 86,
+      "nombre": "Panadería norte",
+      "latitud": 19.820864,
+      "longitud": -90.545118,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 87,
+      "nombre": "Subestación Samulá sur",
+      "latitud": 19.822114,
+      "longitud": -90.541982,
+      "rutas": [
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 88,
+      "nombre": "Panadería sur",
+      "latitud": 19.820784,
+      "longitud": -90.54511,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 89,
+      "nombre": "Fac Ingenieria sur",
+      "latitud": 19.844893,
+      "longitud": -90.477138,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 90,
+      "nombre": "Calle 9 Jardín de niños Eva",
+      "latitud": 19.821891,
+      "longitud": -90.548526,
+      "rutas": [
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 91,
+      "nombre": "Calle 12 con Agustín Melgar",
+      "latitud": 19.825209,
+      "longitud": -90.550504,
+      "rutas": []
+    },
+    {
+      "id": 92,
+      "nombre": "Supermercado norte",
+      "latitud": 19.826667,
+      "longitud": -90.552255,
+      "rutas": [
+        "Koox 25 Samulá - Zaragoza - Kanisté",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 93,
+      "nombre": "Campus VI sur",
+      "latitud": 19.803487,
+      "longitud": -90.50441,
+      "rutas": []
+    },
+    {
+      "id": 94,
+      "nombre": "Juan Escutia por Montes de Oca",
+      "latitud": 19.829536,
+      "longitud": -90.559713,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 95,
+      "nombre": "Costera de Golfo esq. Calle 7",
+      "latitud": 19.828427,
+      "longitud": -90.564857,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 96,
+      "nombre": "Escénica norte",
+      "latitud": 19.826897,
+      "longitud": -90.567378,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 97,
+      "nombre": "Resurgimiento norte",
+      "latitud": 19.825013,
+      "longitud": -90.570702,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 98,
+      "nombre": "Refaccionaria norte",
+      "latitud": 19.822438,
+      "longitud": -90.575816,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 99,
+      "nombre": "Pemex norte",
+      "latitud": 19.815892,
+      "longitud": -90.586603,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 100,
+      "nombre": "Fac Quimica sur",
+      "latitud": 19.849028,
+      "longitud": -90.474497,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 101,
+      "nombre": "Marina norte",
+      "latitud": 19.813026,
+      "longitud": -90.590797,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 102,
+      "nombre": "Muelle Lerma norte",
+      "latitud": 19.81115,
+      "longitud": -90.593886,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 103,
+      "nombre": "Becán 2",
+      "latitud": 19.808317,
+      "longitud": -90.594746,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 104,
+      "nombre": "Campo Marañón",
+      "latitud": 19.806262,
+      "longitud": -90.59691,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 105,
+      "nombre": "Calle 26 con Espíritu Santo",
+      "latitud": 19.802508,
+      "longitud": -90.599024,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 106,
+      "nombre": "Deportivo Las Brisas",
+      "latitud": 19.799208,
+      "longitud": -90.603816,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 107,
+      "nombre": "Calle 20A por Del Petróleo",
+      "latitud": 19.797852,
+      "longitud": -90.603823,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 108,
+      "nombre": "Calle 20A",
+      "latitud": 19.796456,
+      "longitud": -90.604758,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 109,
+      "nombre": "Refugio Pesquero 2",
+      "latitud": 19.799464,
+      "longitud": -90.611029,
+      "rutas": [
+        "Koox 22 Lerma - Tec"
+      ]
+    },
+    {
+      "id": 110,
+      "nombre": "Calle 26 por 24",
+      "latitud": 19.798099,
+      "longitud": -90.608326,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 111,
+      "nombre": "Abarrotes Kikab norte",
+      "latitud": 19.851282,
+      "longitud": -90.482027,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 112,
+      "nombre": "Calle 26 con 22A Termoeléctrica",
+      "latitud": 19.796427,
+      "longitud": -90.610895,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 113,
+      "nombre": "La Caleta",
+      "latitud": 19.797931,
+      "longitud": -90.611912,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 114,
+      "nombre": "Refugio Pesquero",
+      "latitud": 19.799479,
+      "longitud": -90.610915,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 115,
+      "nombre": "Supermercado Turquesa Antigua",
+      "latitud": 19.84909,
+      "longitud": -90.495902,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula",
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1"
+      ]
+    },
+    {
+      "id": 116,
+      "nombre": "Kalá-Jaina",
+      "latitud": 19.851242,
+      "longitud": -90.494122,
+      "rutas": []
+    },
+    {
+      "id": 117,
+      "nombre": "Camarón",
+      "latitud": 19.851334,
+      "longitud": -90.493731,
+      "rutas": [
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 118,
+      "nombre": "Terranova norte",
+      "latitud": 19.852637,
+      "longitud": -90.49126,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 119,
+      "nombre": "Antigua Kalá",
+      "latitud": 19.85311,
+      "longitud": -90.490595,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 120,
+      "nombre": "Dragones norte",
+      "latitud": 19.853923,
+      "longitud": -90.487583,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 121,
+      "nombre": "Dragones sur",
+      "latitud": 19.854072,
+      "longitud": -90.487888,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 122,
+      "nombre": "Xmabén",
+      "latitud": 19.849655,
+      "longitud": -90.483347,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 123,
+      "nombre": "Parque San Antonio norte",
+      "latitud": 19.853427,
+      "longitud": -90.485353,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 124,
+      "nombre": "Calle 1",
+      "latitud": 19.852648,
+      "longitud": -90.481847,
+      "rutas": []
+    },
+    {
+      "id": 125,
+      "nombre": "Calle ah kim pech - C 1",
+      "latitud": 19.852705,
+      "longitud": -90.481543,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 126,
+      "nombre": "Parque los Cedros norte",
+      "latitud": 19.85562,
+      "longitud": -90.480343,
+      "rutas": []
+    },
+    {
+      "id": 127,
+      "nombre": "Mango",
+      "latitud": 19.854992,
+      "longitud": -90.48066,
+      "rutas": []
+    },
+    {
+      "id": 128,
+      "nombre": "Portales San Martín norte",
+      "latitud": 19.847372,
+      "longitud": -90.532923,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 129,
+      "nombre": "Los Alamos norte",
+      "latitud": 19.857985,
+      "longitud": -90.479418,
+      "rutas": []
+    },
+    {
+      "id": 130,
+      "nombre": "Los Alamos sur",
+      "latitud": 19.858422,
+      "longitud": -90.479298,
+      "rutas": []
+    },
+    {
+      "id": 131,
+      "nombre": "Av. Porfirio Diaz norte",
+      "latitud": 19.860212,
+      "longitud": -90.479698,
+      "rutas": []
+    },
+    {
+      "id": 132,
+      "nombre": "Av. Porfirio Díaz sur",
+      "latitud": 19.860005,
+      "longitud": -90.479512,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 133,
+      "nombre": "Chuc-say norte",
+      "latitud": 19.848242,
+      "longitud": -90.484532,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 134,
+      "nombre": "Primaria Fidencio Poot Chablé",
+      "latitud": 19.861018,
+      "longitud": -90.483617,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 135,
+      "nombre": "Primaria Fidencio Poot Chablé sur",
+      "latitud": 19.860777,
+      "longitud": -90.483142,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac"
+      ]
+    },
+    {
+      "id": 136,
+      "nombre": "Av. Guadalupe Victoria",
+      "latitud": 19.859958,
+      "longitud": -90.484878,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac"
+      ]
+    },
+    {
+      "id": 137,
+      "nombre": "Glorieta de las Bombas sur",
+      "latitud": 19.860508,
+      "longitud": -90.488568,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 138,
+      "nombre": "Av. Aviación",
+      "latitud": 19.842738,
+      "longitud": -90.506872,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 139,
+      "nombre": "Calle 14 por Ría",
+      "latitud": 19.84785,
+      "longitud": -90.51959,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza",
+        "Koox 10 Morelos Minas",
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 140,
+      "nombre": "Manuel Campos",
+      "latitud": 19.844189,
+      "longitud": -90.5322,
+      "rutas": [
+        "Koox 18 San Francisco",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 141,
+      "nombre": "Solidaridad con San Luis sur",
+      "latitud": 19.866753,
+      "longitud": -90.489413,
+      "rutas": []
+    },
+    {
+      "id": 142,
+      "nombre": "Glorieta CTM",
+      "latitud": 19.862942,
+      "longitud": -90.492228,
+      "rutas": [
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 143,
+      "nombre": "Técnica 27",
+      "latitud": 19.863433,
+      "longitud": -90.491615,
+      "rutas": []
+    },
+    {
+      "id": 144,
+      "nombre": "Parque Carrillo Puerto norte",
+      "latitud": 19.854764,
+      "longitud": -90.518504,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 145,
+      "nombre": "Iglesia de Sta Lucía",
+      "latitud": 19.847955,
+      "longitud": -90.514617,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 146,
+      "nombre": "Secundaria General 3 sur",
+      "latitud": 19.860817,
+      "longitud": -90.514507,
+      "rutas": []
+    },
+    {
+      "id": 147,
+      "nombre": "Calle 108 por 105",
+      "latitud": 19.855217,
+      "longitud": -90.50954,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 148,
+      "nombre": "El Molino",
+      "latitud": 19.849668,
+      "longitud": -90.516085,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto"
+      ]
+    },
+    {
+      "id": 149,
+      "nombre": "Calle 108 con Calle 105 sur",
+      "latitud": 19.855219,
+      "longitud": -90.509443,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 150,
+      "nombre": "Calle 16 de septiembre",
+      "latitud": 19.857388,
+      "longitud": -90.508043,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 09 Bellavista-San José el Alto"
+      ]
+    },
+    {
+      "id": 151,
+      "nombre": "Calle 6",
+      "latitud": 19.858098,
+      "longitud": -90.509777,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 09 Bellavista-San José el Alto"
+      ]
+    },
+    {
+      "id": 152,
+      "nombre": "Cancha San José el Alto",
+      "latitud": 19.859283,
+      "longitud": -90.509953,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 09 Bellavista-San José el Alto"
+      ]
+    },
+    {
+      "id": 153,
+      "nombre": "Calle 10 con Calle 27",
+      "latitud": 19.846252,
+      "longitud": -90.504228,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 154,
+      "nombre": "San Julián",
+      "latitud": 19.846287,
+      "longitud": -90.49885,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 155,
+      "nombre": "Parque de las Banderas",
+      "latitud": 19.848516,
+      "longitud": -90.489454,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 156,
+      "nombre": "Escuela Primaria Venustiano Carranza",
+      "latitud": 19.846453,
+      "longitud": -90.504383,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 157,
+      "nombre": "Calle 10 con 23",
+      "latitud": 19.848333,
+      "longitud": -90.50533,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 158,
+      "nombre": "Calle 49",
+      "latitud": 19.84464,
+      "longitud": -90.53069,
+      "rutas": [
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 159,
+      "nombre": "Esquina del Águila",
+      "latitud": 19.845556,
+      "longitud": -90.527222,
+      "rutas": [
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 160,
+      "nombre": "Esquina del Combate",
+      "latitud": 19.845942,
+      "longitud": -90.523633,
+      "rutas": [
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 161,
+      "nombre": "Esquina de Repollo",
+      "latitud": 19.846176,
+      "longitud": -90.521479,
+      "rutas": [
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 162,
+      "nombre": "Supermercado por 16",
+      "latitud": 19.846337,
+      "longitud": -90.518582,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 163,
+      "nombre": "Calle 16 por 110",
+      "latitud": 19.846392,
+      "longitud": -90.512295,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 164,
+      "nombre": "Calle 116 con Niños Héroes",
+      "latitud": 19.848,
+      "longitud": -90.507837,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 165,
+      "nombre": "Calle 116 con Calle 17",
+      "latitud": 19.850592,
+      "longitud": -90.506298,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 166,
+      "nombre": "Supermercado Kalá norte",
+      "latitud": 19.851053,
+      "longitud": -90.490813,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 167,
+      "nombre": "Mercado Morelos",
+      "latitud": 19.850838,
+      "longitud": -90.50412,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 168,
+      "nombre": "Unidad Deportiva Morelos",
+      "latitud": 19.850662,
+      "longitud": -90.50182,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 169,
+      "nombre": "Calle Jazmín",
+      "latitud": 19.85161,
+      "longitud": -90.498427,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 170,
+      "nombre": "Renovación Moral",
+      "latitud": 19.852834,
+      "longitud": -90.497964,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 171,
+      "nombre": "Héctor de la Peña Pavón",
+      "latitud": 19.85729,
+      "longitud": -90.497608,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 172,
+      "nombre": "Corregidora",
+      "latitud": 19.859483,
+      "longitud": -90.498057,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 173,
+      "nombre": "Abarrotes Minas",
+      "latitud": 19.861985,
+      "longitud": -90.498425,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 174,
+      "nombre": "Plata",
+      "latitud": 19.862157,
+      "longitud": -90.496297,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 175,
+      "nombre": "Cuarzo por Plata",
+      "latitud": 19.861714,
+      "longitud": -90.494067,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 176,
+      "nombre": "Cuarzo con Topacio (Campo)",
+      "latitud": 19.863368,
+      "longitud": -90.49363,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 177,
+      "nombre": "Supermercado Turquesa norte",
+      "latitud": 19.84813,
+      "longitud": -90.494048,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 178,
+      "nombre": "Alejandrina por Granate",
+      "latitud": 19.865812,
+      "longitud": -90.498158,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 179,
+      "nombre": "Rubí con Topacio",
+      "latitud": 19.866153,
+      "longitud": -90.49561,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 180,
+      "nombre": "San Salvador",
+      "latitud": 19.863728,
+      "longitud": -90.500213,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 181,
+      "nombre": "Abarrotes Donaldo Colosio",
+      "latitud": 19.861413,
+      "longitud": -90.50002,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 182,
+      "nombre": "Las Flores",
+      "latitud": 19.859512,
+      "longitud": -90.500373,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 183,
+      "nombre": "3 hermano con Malagón",
+      "latitud": 19.856347,
+      "longitud": -90.502695,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 184,
+      "nombre": "Depósito San José",
+      "latitud": 19.847405,
+      "longitud": -90.509348,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 185,
+      "nombre": "Esquina del Parroquiano 3",
+      "latitud": 19.852885,
+      "longitud": -90.505513,
+      "rutas": []
+    },
+    {
+      "id": 186,
+      "nombre": "Parque del Joloch",
+      "latitud": 19.854907,
+      "longitud": -90.503638,
+      "rutas": []
+    },
+    {
+      "id": 187,
+      "nombre": "El pez volador 1",
+      "latitud": 19.856197,
+      "longitud": -90.502413,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 188,
+      "nombre": "Gasolinera Sta Lucia",
+      "latitud": 19.84639,
+      "longitud": -90.498722,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche",
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula",
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 189,
+      "nombre": "IC. Turismo sur",
+      "latitud": 19.816237,
+      "longitud": -90.536976,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 190,
+      "nombre": "Unidad Deportiva Morelos",
+      "latitud": 19.850474,
+      "longitud": -90.501902,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 191,
+      "nombre": "Antigua Hampolol norte",
+      "latitud": 19.868383,
+      "longitud": -90.4987,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 192,
+      "nombre": "Deshuesadero sur",
+      "latitud": 19.787193,
+      "longitud": -90.500142,
+      "rutas": []
+    },
+    {
+      "id": 193,
+      "nombre": "Portales San Martín sur",
+      "latitud": 19.849408,
+      "longitud": -90.531146,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 194,
+      "nombre": "Parque de Guadalupe",
+      "latitud": 19.848487,
+      "longitud": -90.530575,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 195,
+      "nombre": "Calle 12 con calle 45-A",
+      "latitud": 19.850446,
+      "longitud": -90.529077,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 196,
+      "nombre": "Iglesia de San Francisco",
+      "latitud": 19.852854,
+      "longitud": -90.525029,
+      "rutas": []
+    },
+    {
+      "id": 197,
+      "nombre": "Parque Sta Lucía",
+      "latitud": 19.847623,
+      "longitud": -90.514797,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza",
+        "Koox 09 Bellavista-San José el Alto",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 198,
+      "nombre": "Ah-Kim-Pech sur",
+      "latitud": 19.851033,
+      "longitud": -90.520691,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 199,
+      "nombre": "IMSS Santa Lucía",
+      "latitud": 19.844981,
+      "longitud": -90.500989,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche",
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 200,
+      "nombre": "Ah-Kim-Pech norte",
+      "latitud": 19.851197,
+      "longitud": -90.520463,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 201,
+      "nombre": "Fco. I. Madero",
+      "latitud": 19.851303,
+      "longitud": -90.52194,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 202,
+      "nombre": "Parque de San Fco.",
+      "latitud": 19.851862,
+      "longitud": -90.524763,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 203,
+      "nombre": "Cruz Roja sur",
+      "latitud": 19.85925,
+      "longitud": -90.516448,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 204,
+      "nombre": "Av. Jaina con Calle Calakmul",
+      "latitud": 19.851755,
+      "longitud": -90.494078,
+      "rutas": []
+    },
+    {
+      "id": 205,
+      "nombre": "Nelson Barrera norte",
+      "latitud": 19.862167,
+      "longitud": -90.511408,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 206,
+      "nombre": "La  Escondida",
+      "latitud": 19.845824,
+      "longitud": -90.530953,
+      "rutas": [
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 207,
+      "nombre": "Nelson Barrera sur",
+      "latitud": 19.862535,
+      "longitud": -90.512267,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 208,
+      "nombre": "Gilberto",
+      "latitud": 19.847621,
+      "longitud": -90.484926,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 209,
+      "nombre": "Calle 45-B",
+      "latitud": 19.846702,
+      "longitud": -90.529142,
+      "rutas": [
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 210,
+      "nombre": "Sixto Pérez Cuevas",
+      "latitud": 19.86346,
+      "longitud": -90.507577,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 211,
+      "nombre": "CETMAR",
+      "latitud": 19.863715,
+      "longitud": -90.508428,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 212,
+      "nombre": "Villa Mercedes norte",
+      "latitud": 19.864676,
+      "longitud": -90.504915,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 213,
+      "nombre": "Villamercedes sur",
+      "latitud": 19.864935,
+      "longitud": -90.504688,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 214,
+      "nombre": "Palmas III sur",
+      "latitud": 19.866052,
+      "longitud": -90.502508,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 215,
+      "nombre": "Solidaridad con San Luis Norte",
+      "latitud": 19.866442,
+      "longitud": -90.48938,
+      "rutas": [
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 216,
+      "nombre": "Antigua Hampolol sur",
+      "latitud": 19.868198,
+      "longitud": -90.499207,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 217,
+      "nombre": "Oaxaca",
+      "latitud": 19.86938,
+      "longitud": -90.490463,
+      "rutas": [
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 218,
+      "nombre": "Maquiladora norte",
+      "latitud": 19.871125,
+      "longitud": -90.493952,
+      "rutas": [
+        "Koox 11 Fidel Velazquez",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 219,
+      "nombre": "Yacasay",
+      "latitud": 19.849814,
+      "longitud": -90.483149,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 220,
+      "nombre": "Solidaridad Nacional",
+      "latitud": 19.871944,
+      "longitud": -90.494275,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 221,
+      "nombre": "Calle 10 por calle 19",
+      "latitud": 19.849882,
+      "longitud": -90.505235,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 222,
+      "nombre": "Calle Castellot con 17",
+      "latitud": 19.851213,
+      "longitud": -90.502933,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 223,
+      "nombre": "Ría con 14",
+      "latitud": 19.847565,
+      "longitud": -90.519741,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 224,
+      "nombre": "Ría Supermercador sur",
+      "latitud": 19.845943,
+      "longitud": -90.519351,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 225,
+      "nombre": "Av. Hidalgo 1 sur",
+      "latitud": 19.842284,
+      "longitud": -90.513409,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 226,
+      "nombre": "Av. Hidalgo 2 sur",
+      "latitud": 19.83991,
+      "longitud": -90.51189,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 227,
+      "nombre": "Hidalgo Aviacion sur",
+      "latitud": 19.837554,
+      "longitud": -90.509032,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 228,
+      "nombre": "Palmas III norte",
+      "latitud": 19.86579,
+      "longitud": -90.5026,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 229,
+      "nombre": "Abarrotes Kikab Sur",
+      "latitud": 19.851193,
+      "longitud": -90.481987,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 230,
+      "nombre": "Quinta de los españoles sur",
+      "latitud": 19.834553,
+      "longitud": -90.501132,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 231,
+      "nombre": "Tienda de materiales Concordia sur",
+      "latitud": 19.83325,
+      "longitud": -90.498827,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 232,
+      "nombre": "Glorieta kin-ha",
+      "latitud": 19.830661,
+      "longitud": -90.495999,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 233,
+      "nombre": "Glorieta Concordia IMSS 13",
+      "latitud": 19.83336,
+      "longitud": -90.494587,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 234,
+      "nombre": "Abarrotes Siglo XXI",
+      "latitud": 19.814457,
+      "longitud": -90.493666,
+      "rutas": []
+    },
+    {
+      "id": 235,
+      "nombre": "Calle décima sur",
+      "latitud": 19.809892,
+      "longitud": -90.493295,
+      "rutas": []
+    },
+    {
+      "id": 236,
+      "nombre": "Vigésima cuarta",
+      "latitud": 19.801525,
+      "longitud": -90.491139,
+      "rutas": []
+    },
+    {
+      "id": 237,
+      "nombre": "Segunda Glorieta",
+      "latitud": 19.802494,
+      "longitud": -90.489487,
+      "rutas": []
+    },
+    {
+      "id": 238,
+      "nombre": "Unidad Deportiva siglo XXI",
+      "latitud": 19.806561,
+      "longitud": -90.490571,
+      "rutas": []
+    },
+    {
+      "id": 239,
+      "nombre": "Calle décima norte",
+      "latitud": 19.810152,
+      "longitud": -90.492387,
+      "rutas": []
+    },
+    {
+      "id": 240,
+      "nombre": "Fac Quimica norte",
+      "latitud": 19.848878,
+      "longitud": -90.47468,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 241,
+      "nombre": "Glorieta siglo XXI norte",
+      "latitud": 19.814136,
+      "longitud": -90.493415,
+      "rutas": []
+    },
+    {
+      "id": 242,
+      "nombre": "Cruz Roja norte",
+      "latitud": 19.858812,
+      "longitud": -90.51682,
+      "rutas": []
+    },
+    {
+      "id": 243,
+      "nombre": "San Caralampio",
+      "latitud": 19.852463,
+      "longitud": -90.512035,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto"
+      ]
+    },
+    {
+      "id": 244,
+      "nombre": "Calle 10 por Rosales",
+      "latitud": 19.850182,
+      "longitud": -90.527119,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 245,
+      "nombre": "Secundaria General 3",
+      "latitud": 19.860682,
+      "longitud": -90.514498,
+      "rutas": []
+    },
+    {
+      "id": 246,
+      "nombre": "Fuerte San José",
+      "latitud": 19.859948,
+      "longitud": -90.511032,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto"
+      ]
+    },
+    {
+      "id": 247,
+      "nombre": "Vicente Guerrero",
+      "latitud": 19.832208,
+      "longitud": -90.485576,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 248,
+      "nombre": "Cecytec",
+      "latitud": 19.832537,
+      "longitud": -90.491185,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 249,
+      "nombre": "Ría Supermercado norte",
+      "latitud": 19.845971,
+      "longitud": -90.519161,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto",
+        "Koox 10 Morelos Minas",
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 250,
+      "nombre": "Periférico sur",
+      "latitud": 19.791697,
+      "longitud": -90.502142,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 251,
+      "nombre": "Fac Ingenieria norte",
+      "latitud": 19.844762,
+      "longitud": -90.477492,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 252,
+      "nombre": "Glorieta Concordia",
+      "latitud": 19.833415,
+      "longitud": -90.494938,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 253,
+      "nombre": "Tienda de Materiales Concordia norte",
+      "latitud": 19.833565,
+      "longitud": -90.498948,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 254,
+      "nombre": "IMSS Concordia sur",
+      "latitud": 19.833914,
+      "longitud": -90.49262,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 255,
+      "nombre": "Fco. I. Madero",
+      "latitud": 19.833757,
+      "longitud": -90.48734,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 256,
+      "nombre": "IMSS Concordia norte",
+      "latitud": 19.834433,
+      "longitud": -90.492347,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 257,
+      "nombre": "Venustiano Carranza",
+      "latitud": 19.834933,
+      "longitud": -90.484081,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche",
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 258,
+      "nombre": "Quinta españoles norte",
+      "latitud": 19.834604,
+      "longitud": -90.501022,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 259,
+      "nombre": "Navales sur",
+      "latitud": 19.835853,
+      "longitud": -90.503966,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 260,
+      "nombre": "Navales norte",
+      "latitud": 19.835767,
+      "longitud": -90.503442,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 261,
+      "nombre": "Héctor Pérez Martinez",
+      "latitud": 19.836254,
+      "longitud": -90.487214,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 262,
+      "nombre": "Supermercado Turquesa sur",
+      "latitud": 19.847983,
+      "longitud": -90.494057,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 263,
+      "nombre": "Décima primera norte",
+      "latitud": 19.841283,
+      "longitud": -90.479678,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 264,
+      "nombre": "Emiliano Zapata",
+      "latitud": 19.836514,
+      "longitud": -90.487155,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 265,
+      "nombre": "Hidalgo Aviación norte",
+      "latitud": 19.837418,
+      "longitud": -90.508508,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 266,
+      "nombre": "Unidad Deportiva Concordia norte",
+      "latitud": 19.837467,
+      "longitud": -90.490214,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 267,
+      "nombre": "Av. Hidalgo 1 norte",
+      "latitud": 19.842463,
+      "longitud": -90.513408,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 268,
+      "nombre": "Ría Tienda de materiales (Maritza Ruelas)",
+      "latitud": 19.843648,
+      "longitud": -90.518726,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto",
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 269,
+      "nombre": "Calle 12 Mercadito Morelos",
+      "latitud": 19.851008,
+      "longitud": -90.503997,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 270,
+      "nombre": "Castellot con 19",
+      "latitud": 19.850895,
+      "longitud": -90.502903,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1"
+      ]
+    },
+    {
+      "id": 271,
+      "nombre": "Av. Circuito Constitución norte",
+      "latitud": 19.852107,
+      "longitud": -90.500088,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 272,
+      "nombre": "12 CON 114",
+      "latitud": 19.852518,
+      "longitud": -90.505698,
+      "rutas": [
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 273,
+      "nombre": "Glorieta Exhacienda norte",
+      "latitud": 19.838682,
+      "longitud": -90.481322,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala"
+      ]
+    },
+    {
+      "id": 274,
+      "nombre": "Tepeyac",
+      "latitud": 19.814925,
+      "longitud": -90.533424,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 275,
+      "nombre": "Calle 12 jardín de Niños Eva Samano",
+      "latitud": 19.822203,
+      "longitud": -90.549025,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 276,
+      "nombre": "Ecuador",
+      "latitud": 19.842633,
+      "longitud": -90.522063,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 277,
+      "nombre": "Unidad Deportiva Concordia",
+      "latitud": 19.837176,
+      "longitud": -90.492523,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 278,
+      "nombre": "Supermercado Kalá",
+      "latitud": 19.839542,
+      "longitud": -90.490018,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 279,
+      "nombre": "Itzambanak",
+      "latitud": 19.840772,
+      "longitud": -90.488714,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 280,
+      "nombre": "Bonampak",
+      "latitud": 19.843177,
+      "longitud": -90.487156,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 281,
+      "nombre": "Bonampak por Campechén",
+      "latitud": 19.843779,
+      "longitud": -90.487965,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 282,
+      "nombre": "Campechén",
+      "latitud": 19.845082,
+      "longitud": -90.486993,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 283,
+      "nombre": "Dzilbalchén",
+      "latitud": 19.842922,
+      "longitud": -90.490087,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 284,
+      "nombre": "Paralimpico norte",
+      "latitud": 19.837472,
+      "longitud": -90.480847,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 285,
+      "nombre": "Palenque",
+      "latitud": 19.841076,
+      "longitud": -90.492021,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 286,
+      "nombre": "Panadería",
+      "latitud": 19.839299,
+      "longitud": -90.490512,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 287,
+      "nombre": "Callejón",
+      "latitud": 19.839667,
+      "longitud": -90.492631,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 288,
+      "nombre": "Benjamín Romero",
+      "latitud": 19.837652,
+      "longitud": -90.495961,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 289,
+      "nombre": "Av. Hidalgo (La Verbena Norte)",
+      "latitud": 19.839932,
+      "longitud": -90.511781,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 290,
+      "nombre": "14 Con 112",
+      "latitud": 19.847707,
+      "longitud": -90.5113,
+      "rutas": []
+    },
+    {
+      "id": 291,
+      "nombre": "Primaria Año Internacional De La Paz",
+      "latitud": 19.850743,
+      "longitud": -90.507587,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 292,
+      "nombre": "Deshuesadero Norte",
+      "latitud": 19.787693,
+      "longitud": -90.499918,
+      "rutas": []
+    },
+    {
+      "id": 293,
+      "nombre": "Casa Hogar Sur",
+      "latitud": 19.779267,
+      "longitud": -90.498162,
+      "rutas": []
+    },
+    {
+      "id": 294,
+      "nombre": "Calle 22 Por Calle 7 Norte",
+      "latitud": 19.774153,
+      "longitud": -90.496332,
+      "rutas": []
+    },
+    {
+      "id": 295,
+      "nombre": "Vigésima Norte",
+      "latitud": 19.835183,
+      "longitud": -90.482662,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 296,
+      "nombre": "Calle 9 Con Calle 22",
+      "latitud": 19.771863,
+      "longitud": -90.495994,
+      "rutas": []
+    },
+    {
+      "id": 297,
+      "nombre": "Nochebuena",
+      "latitud": 19.830211,
+      "longitud": -90.515757,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 298,
+      "nombre": "Tec De Campeche",
+      "latitud": 19.794142,
+      "longitud": -90.616938,
+      "rutas": [
+        "Koox 22 Lerma - Tec"
+      ]
+    },
+    {
+      "id": 299,
+      "nombre": "Parque Carrillo Puerto Sur",
+      "latitud": 19.854963,
+      "longitud": -90.51868,
+      "rutas": []
+    },
+    {
+      "id": 300,
+      "nombre": "Solidaridad Nacional",
+      "latitud": 19.868873,
+      "longitud": -90.492212,
+      "rutas": [
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 301,
+      "nombre": "Calle 5 Con Calle 4",
+      "latitud": 19.853928,
+      "longitud": -90.515147,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto"
+      ]
+    },
+    {
+      "id": 302,
+      "nombre": "Parque Morazán",
+      "latitud": 19.856702,
+      "longitud": -90.514052,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto"
+      ]
+    },
+    {
+      "id": 303,
+      "nombre": "Cementerio Santa Lucía",
+      "latitud": 19.849152,
+      "longitud": -90.512912,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 304,
+      "nombre": "Vigesima Novena",
+      "latitud": 19.838419,
+      "longitud": -90.481769,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala"
+      ]
+    },
+    {
+      "id": 305,
+      "nombre": "Calle Girasol",
+      "latitud": 19.828224,
+      "longitud": -90.514796,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 306,
+      "nombre": "Abarrotes Jardines",
+      "latitud": 19.830195,
+      "longitud": -90.517648,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 307,
+      "nombre": "No Me Olvides",
+      "latitud": 19.825913,
+      "longitud": -90.518382,
+      "rutas": [
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 308,
+      "nombre": "Parque Jardines",
+      "latitud": 19.832551,
+      "longitud": -90.514916,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 309,
+      "nombre": "Glorieta Colosio",
+      "latitud": 19.833307,
+      "longitud": -90.526343,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 310,
+      "nombre": "Bomba De Agua Jardines",
+      "latitud": 19.833611,
+      "longitud": -90.516104,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 311,
+      "nombre": "Parroquia El Sagrado Corazón",
+      "latitud": 19.834301,
+      "longitud": -90.51912,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 312,
+      "nombre": "Campo Los Tres Poderes",
+      "latitud": 19.83465,
+      "longitud": -90.523389,
+      "rutas": [
+        "Koox 15 Jardines",
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 313,
+      "nombre": "Cbtis",
+      "latitud": 19.835172,
+      "longitud": -90.527538,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 314,
+      "nombre": "Villas De Kalá Norte",
+      "latitud": 19.840857,
+      "longitud": -90.481988,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 315,
+      "nombre": "Tres Poderes",
+      "latitud": 19.836111,
+      "longitud": -90.522014,
+      "rutas": [
+        "Koox 15 Jardines",
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 316,
+      "nombre": "Coahuila Sur",
+      "latitud": 19.838388,
+      "longitud": -90.523021,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 317,
+      "nombre": "Cam Santa Ana",
+      "latitud": 19.839475,
+      "longitud": -90.527923,
+      "rutas": [
+        "Koox 15 Jardines",
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 318,
+      "nombre": "Esquina Del Parroquiano 1",
+      "latitud": 19.852647,
+      "longitud": -90.505942,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 319,
+      "nombre": "Calle Dolores",
+      "latitud": 19.853445,
+      "longitud": -90.501888,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 320,
+      "nombre": "Cam Presidentes Sur",
+      "latitud": 19.857683,
+      "longitud": -90.489788,
+      "rutas": []
+    },
+    {
+      "id": 321,
+      "nombre": "Av. Ctm Sur",
+      "latitud": 19.85589,
+      "longitud": -90.493084,
+      "rutas": []
+    },
+    {
+      "id": 322,
+      "nombre": "Balamkú",
+      "latitud": 19.853788,
+      "longitud": -90.493622,
+      "rutas": []
+    },
+    {
+      "id": 323,
+      "nombre": "Av. Jaina",
+      "latitud": 19.851311,
+      "longitud": -90.494343,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 324,
+      "nombre": "Primaria Héctor Pérez",
+      "latitud": 19.847848,
+      "longitud": -90.526222,
+      "rutas": [
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 325,
+      "nombre": "Abarrotes Ramón Espinola Norte",
+      "latitud": 19.843128,
+      "longitud": -90.483203,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 326,
+      "nombre": "Parque Santa Ana",
+      "latitud": 19.838836,
+      "longitud": -90.52653,
+      "rutas": [
+        "Koox 15 Jardines",
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 327,
+      "nombre": "Querétaro",
+      "latitud": 19.83508,
+      "longitud": -90.523354,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 328,
+      "nombre": "Paso De Las Águilas",
+      "latitud": 19.82771,
+      "longitud": -90.520128,
+      "rutas": [
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 329,
+      "nombre": "Luz Alba Delgado",
+      "latitud": 19.825098,
+      "longitud": -90.515186,
+      "rutas": [
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 330,
+      "nombre": "Niño Artillero Norte",
+      "latitud": 19.82435,
+      "longitud": -90.516737,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 331,
+      "nombre": "Cancha Polvorín Norte",
+      "latitud": 19.824604,
+      "longitud": -90.519082,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 332,
+      "nombre": "Centro De Salud Polvorín",
+      "latitud": 19.826341,
+      "longitud": -90.521181,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 333,
+      "nombre": "Centro De Salud Polvorín",
+      "latitud": 19.826109,
+      "longitud": -90.521333,
+      "rutas": []
+    },
+    {
+      "id": 334,
+      "nombre": "López Portillo Norte",
+      "latitud": 19.815492,
+      "longitud": -90.519152,
+      "rutas": []
+    },
+    {
+      "id": 335,
+      "nombre": "López Portillo Sur",
+      "latitud": 19.81553,
+      "longitud": -90.518742,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 336,
+      "nombre": "Av. Ramón Espinola Blanco Norte",
+      "latitud": 19.845792,
+      "longitud": -90.486845,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 337,
+      "nombre": "Parque Infantil Jardines",
+      "latitud": 19.832059,
+      "longitud": -90.51634,
+      "rutas": []
+    },
+    {
+      "id": 338,
+      "nombre": "Calle 20 Con Calle 19 Sur",
+      "latitud": 19.818919,
+      "longitud": -90.554451,
+      "rutas": [
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 339,
+      "nombre": "Almendra Sur",
+      "latitud": 19.813594,
+      "longitud": -90.542313,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 340,
+      "nombre": "Almendra Norte",
+      "latitud": 19.813604,
+      "longitud": -90.541925,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 341,
+      "nombre": "Calle Del Olvido Con Ecuador",
+      "latitud": 19.832287,
+      "longitud": -90.523568,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 342,
+      "nombre": "Coahuila Norte",
+      "latitud": 19.838337,
+      "longitud": -90.522814,
+      "rutas": [
+        "Koox 15 Jardines",
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 343,
+      "nombre": "La Libertad Sur",
+      "latitud": 19.8024,
+      "longitud": -90.606644,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 344,
+      "nombre": "Calle 12 Prol. Calle 7",
+      "latitud": 19.823649,
+      "longitud": -90.549713,
+      "rutas": []
+    },
+    {
+      "id": 345,
+      "nombre": "Calle 26",
+      "latitud": 19.804313,
+      "longitud": -90.597617,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 346,
+      "nombre": "Calle 20 Con Calle 9 Sur",
+      "latitud": 19.823344,
+      "longitud": -90.553071,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 347,
+      "nombre": "Abarrotes Zaragoza Sur",
+      "latitud": 19.815926,
+      "longitud": -90.541327,
+      "rutas": []
+    },
+    {
+      "id": 348,
+      "nombre": "Abarrotes Zaragoza Norte",
+      "latitud": 19.815995,
+      "longitud": -90.54126,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 349,
+      "nombre": "Calle 4 Sur",
+      "latitud": 19.821286,
+      "longitud": -90.54375,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza"
+      ]
+    },
+    {
+      "id": 350,
+      "nombre": "Abarrotes Ecuador Sur",
+      "latitud": 19.832178,
+      "longitud": -90.523569,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 351,
+      "nombre": "Parque Polvorín",
+      "latitud": 19.830066,
+      "longitud": -90.52288,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 352,
+      "nombre": "Conscripto",
+      "latitud": 19.824589,
+      "longitud": -90.520977,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 353,
+      "nombre": "Cancha Polvorín Sur",
+      "latitud": 19.824503,
+      "longitud": -90.519017,
+      "rutas": []
+    },
+    {
+      "id": 354,
+      "nombre": "Niño Artillero Sur",
+      "latitud": 19.824323,
+      "longitud": -90.517046,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 355,
+      "nombre": "Margarita",
+      "latitud": 19.822353,
+      "longitud": -90.517139,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 356,
+      "nombre": "Concha Acústica",
+      "latitud": 19.843046,
+      "longitud": -90.540505,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 357,
+      "nombre": "Bethel",
+      "latitud": 19.821835,
+      "longitud": -90.514128,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 358,
+      "nombre": "Sinaí",
+      "latitud": 19.820891,
+      "longitud": -90.513594,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 359,
+      "nombre": "Tulipán",
+      "latitud": 19.82033,
+      "longitud": -90.515176,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 360,
+      "nombre": "Galilea",
+      "latitud": 19.821264,
+      "longitud": -90.518574,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 361,
+      "nombre": "Castamay",
+      "latitud": 19.8193,
+      "longitud": -90.520914,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 362,
+      "nombre": "Maquiladora Cews",
+      "latitud": 19.820105,
+      "longitud": -90.522721,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 363,
+      "nombre": "Punta Maxtún",
+      "latitud": 19.823959,
+      "longitud": -90.522032,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 364,
+      "nombre": "Acción Nacional",
+      "latitud": 19.824686,
+      "longitud": -90.524575,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana"
+      ]
+    },
+    {
+      "id": 365,
+      "nombre": "Ecuador Con Chablé Norte",
+      "latitud": 19.827319,
+      "longitud": -90.522876,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 366,
+      "nombre": "Parque Polvorín",
+      "latitud": 19.829507,
+      "longitud": -90.522816,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 367,
+      "nombre": "Supermercado Kalá Sur",
+      "latitud": 19.850448,
+      "longitud": -90.490557,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 368,
+      "nombre": "Parque De Las Banderas",
+      "latitud": 19.847255,
+      "longitud": -90.536688,
+      "rutas": [
+        "Koox 18 San Francisco",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 369,
+      "nombre": "Calle 4 Norte",
+      "latitud": 19.821433,
+      "longitud": -90.543598,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 370,
+      "nombre": "C. 12 Con Prolongación De La Calle 7 Sur",
+      "latitud": 19.823173,
+      "longitud": -90.549403,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 371,
+      "nombre": "Fovi - Juan Escutia",
+      "latitud": 19.828361,
+      "longitud": -90.559757,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 372,
+      "nombre": "Supermercado Sur",
+      "latitud": 19.826453,
+      "longitud": -90.551425,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 373,
+      "nombre": "Electricistas Sur",
+      "latitud": 19.826756,
+      "longitud": -90.548105,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 374,
+      "nombre": "Supermercado Electricistas Sur",
+      "latitud": 19.825255,
+      "longitud": -90.544985,
+      "rutas": []
+    },
+    {
+      "id": 375,
+      "nombre": "Uxulkah Sur",
+      "latitud": 19.819908,
+      "longitud": -90.539937,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 376,
+      "nombre": "Agencia De Autos",
+      "latitud": 19.81112,
+      "longitud": -90.529715,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 377,
+      "nombre": "Villa Dalias Sur",
+      "latitud": 19.807064,
+      "longitud": -90.528845,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 378,
+      "nombre": "Seduc",
+      "latitud": 19.80455,
+      "longitud": -90.527237,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 379,
+      "nombre": "Jardín De Niños Florinda Batista",
+      "latitud": 19.847865,
+      "longitud": -90.533715,
+      "rutas": [
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 380,
+      "nombre": "Villa Dalias Norte",
+      "latitud": 19.807172,
+      "longitud": -90.528707,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 381,
+      "nombre": "La Superior",
+      "latitud": 19.811186,
+      "longitud": -90.529533,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 382,
+      "nombre": "Refresquera Norte",
+      "latitud": 19.814364,
+      "longitud": -90.527927,
+      "rutas": []
+    },
+    {
+      "id": 383,
+      "nombre": "Especialidades Caseta 3 Norte",
+      "latitud": 19.814278,
+      "longitud": -90.525501,
+      "rutas": []
+    },
+    {
+      "id": 384,
+      "nombre": "Policía Norte",
+      "latitud": 19.814292,
+      "longitud": -90.522135,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 385,
+      "nombre": "Especialidades Caseta  1 Norte",
+      "latitud": 19.815549,
+      "longitud": -90.523579,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 386,
+      "nombre": "Linda Vista Norte",
+      "latitud": 19.819067,
+      "longitud": -90.525566,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 387,
+      "nombre": "Umaa Lázaro Cárdenas Norte",
+      "latitud": 19.821773,
+      "longitud": -90.526089,
+      "rutas": []
+    },
+    {
+      "id": 388,
+      "nombre": "Bugambilias Norte",
+      "latitud": 19.824423,
+      "longitud": -90.526594,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 389,
+      "nombre": "Las Flores Norte",
+      "latitud": 19.824505,
+      "longitud": -90.52935,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 390,
+      "nombre": "Román Píña Chán Norte",
+      "latitud": 19.850146,
+      "longitud": -90.532151,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 391,
+      "nombre": "Las Flores Sur",
+      "latitud": 19.824196,
+      "longitud": -90.529779,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 392,
+      "nombre": "Bugambilias Sur",
+      "latitud": 19.824482,
+      "longitud": -90.527332,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 393,
+      "nombre": "Umaa Lázaro Cárdenas Sur",
+      "latitud": 19.821758,
+      "longitud": -90.526284,
+      "rutas": []
+    },
+    {
+      "id": 394,
+      "nombre": "Linda Vista Norte",
+      "latitud": 19.819011,
+      "longitud": -90.525719,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 395,
+      "nombre": "Especialidades Caseta 1 Sur",
+      "latitud": 19.815654,
+      "longitud": -90.5239,
+      "rutas": []
+    },
+    {
+      "id": 396,
+      "nombre": "Subestación Samulá Norte",
+      "latitud": 19.822431,
+      "longitud": -90.54199,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 397,
+      "nombre": "Supermercado Electricistas Norte",
+      "latitud": 19.82588,
+      "longitud": -90.545218,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 398,
+      "nombre": "Electricistas Norte",
+      "latitud": 19.826996,
+      "longitud": -90.547799,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 399,
+      "nombre": "Facultad De Ciencias Sociales",
+      "latitud": 19.829588,
+      "longitud": -90.556305,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 400,
+      "nombre": "22 Con 19",
+      "latitud": 19.766555,
+      "longitud": -90.494427,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 401,
+      "nombre": "Supermercado Ah-Kim-Pech Sur",
+      "latitud": 19.852957,
+      "longitud": -90.529485,
+      "rutas": []
+    },
+    {
+      "id": 402,
+      "nombre": "Ciricote",
+      "latitud": 19.800607,
+      "longitud": -90.601645,
+      "rutas": [
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 403,
+      "nombre": "Ecuador Con Chablé Sur",
+      "latitud": 19.827502,
+      "longitud": -90.523036,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 404,
+      "nombre": "Granada",
+      "latitud": 19.824921,
+      "longitud": -90.520823,
+      "rutas": [
+        "KO'OX 17 Leovigildo Gómez - Solidaridad Urbana",
+        "Koox 16 Polvorín - Paso de las Águilas"
+      ]
+    },
+    {
+      "id": 405,
+      "nombre": "Glorieta De Las Bombas Norte",
+      "latitud": 19.86047,
+      "longitud": -90.488297,
+      "rutas": [
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 406,
+      "nombre": "Uxulkah Norte",
+      "latitud": 19.819985,
+      "longitud": -90.539734,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 407,
+      "nombre": "Reforma Con Tumbo",
+      "latitud": 19.857485,
+      "longitud": -90.503555,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 408,
+      "nombre": "Calle Narciso",
+      "latitud": 19.829346,
+      "longitud": -90.516901,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 409,
+      "nombre": "Imss Novia Del Mar Sur",
+      "latitud": 19.85404,
+      "longitud": -90.526787,
+      "rutas": []
+    },
+    {
+      "id": 410,
+      "nombre": "Av. Pablo García Norte",
+      "latitud": 19.835506,
+      "longitud": -90.49379,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 411,
+      "nombre": "Calle 3 Hermanos",
+      "latitud": 19.855292,
+      "longitud": -90.501173,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 412,
+      "nombre": "Miguel Hidalgo Con Rodríguez Barrera",
+      "latitud": 19.855082,
+      "longitud": -90.512108,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 413,
+      "nombre": "Parque Bellavista Sur",
+      "latitud": 19.85562,
+      "longitud": -90.512627,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 414,
+      "nombre": "Justo Sierra Sur",
+      "latitud": 19.813653,
+      "longitud": -90.539767,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 415,
+      "nombre": "Calle 2-A Con Almendra",
+      "latitud": 19.814267,
+      "longitud": -90.543522,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 416,
+      "nombre": "Venustiano Carranza Sur",
+      "latitud": 19.815223,
+      "longitud": -90.540758,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 417,
+      "nombre": "Calle 14",
+      "latitud": 19.815927,
+      "longitud": -90.551579,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 418,
+      "nombre": "Parque De Kanisté Norte",
+      "latitud": 19.816788,
+      "longitud": -90.554969,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 419,
+      "nombre": "Calle Benito Juárez",
+      "latitud": 19.818028,
+      "longitud": -90.540991,
+      "rutas": []
+    },
+    {
+      "id": 420,
+      "nombre": "Parque Campeche",
+      "latitud": 19.854455,
+      "longitud": -90.523743,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 421,
+      "nombre": "Calle 20 Con Calle 9 Norte",
+      "latitud": 19.823347,
+      "longitud": -90.553031,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 422,
+      "nombre": "Biblioteca Uac Sur",
+      "latitud": 19.826362,
+      "longitud": -90.553514,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 423,
+      "nombre": "Calle 19 Con Calle 2",
+      "latitud": 19.815144,
+      "longitud": -90.544321,
+      "rutas": [
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 424,
+      "nombre": "Parque De Samulá",
+      "latitud": 19.816761,
+      "longitud": -90.54873,
+      "rutas": [
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 425,
+      "nombre": "Calle 11 Con Calle 12 Sur",
+      "latitud": 19.81903,
+      "longitud": -90.543679,
+      "rutas": []
+    },
+    {
+      "id": 426,
+      "nombre": "Centro Comunitario Kanisté Norte",
+      "latitud": 19.820556,
+      "longitud": -90.553801,
+      "rutas": []
+    },
+    {
+      "id": 427,
+      "nombre": "Agustín Melgar",
+      "latitud": 19.825249,
+      "longitud": -90.550703,
+      "rutas": [
+        "Koox 21 Kanisté - Samula - Zaragoza",
+        "Koox 25 Samulá - Zaragoza - Kanisté"
+      ]
+    },
+    {
+      "id": 428,
+      "nombre": "Calle 16 De Septiembre Norte",
+      "latitud": 19.857407,
+      "longitud": -90.507852,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 429,
+      "nombre": "El Pez Volador 3",
+      "latitud": 19.856065,
+      "longitud": -90.502618,
+      "rutas": []
+    },
+    {
+      "id": 430,
+      "nombre": "Calle Unión Obrera Norte",
+      "latitud": 19.856555,
+      "longitud": -90.505983,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1"
+      ]
+    },
+    {
+      "id": 431,
+      "nombre": "Ría San Francisco",
+      "latitud": 19.851674,
+      "longitud": -90.521986,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 432,
+      "nombre": "Calle 104 Con Benito Juárez",
+      "latitud": 19.857086,
+      "longitud": -90.512551,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 433,
+      "nombre": "Alberto Trueba",
+      "latitud": 19.834978,
+      "longitud": -90.489215,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 434,
+      "nombre": "La Curvita",
+      "latitud": 19.844659,
+      "longitud": -90.489324,
+      "rutas": [
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 435,
+      "nombre": "Escuela Primaria Septimio Pérez Palacios",
+      "latitud": 19.853983,
+      "longitud": -90.507635,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 436,
+      "nombre": "Reforma",
+      "latitud": 19.85776,
+      "longitud": -90.504477,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 437,
+      "nombre": "Hospital",
+      "latitud": 19.789902,
+      "longitud": -90.619589,
+      "rutas": [
+        "Koox 22 Lerma - Tec"
+      ]
+    },
+    {
+      "id": 438,
+      "nombre": "Tec. De Lerma",
+      "latitud": 19.791902,
+      "longitud": -90.619037,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 439,
+      "nombre": "Tec De Campeche 2",
+      "latitud": 19.794274,
+      "longitud": -90.617175,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 440,
+      "nombre": "468 Caleta 2",
+      "latitud": 19.797698,
+      "longitud": -90.612528,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 441,
+      "nombre": "Tec. De Lerma 2",
+      "latitud": 19.791219,
+      "longitud": -90.619935,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 442,
+      "nombre": "San José",
+      "latitud": 19.850376,
+      "longitud": -90.520254,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 443,
+      "nombre": "Mercadito Lerma",
+      "latitud": 19.801107,
+      "longitud": -90.60886,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 444,
+      "nombre": "La Libertad Norte",
+      "latitud": 19.802693,
+      "longitud": -90.606378,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 445,
+      "nombre": "Técnica 8",
+      "latitud": 19.804653,
+      "longitud": -90.60346,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 446,
+      "nombre": "Parque De Lerma Sur",
+      "latitud": 19.806263,
+      "longitud": -90.601237,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 447,
+      "nombre": "Parque De Lerma Norte",
+      "latitud": 19.806307,
+      "longitud": -90.60131,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 448,
+      "nombre": "Cocalitos Sur",
+      "latitud": 19.808293,
+      "longitud": -90.598092,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 449,
+      "nombre": "Andador Bajada De Los Mayas Norte",
+      "latitud": 19.808097,
+      "longitud": -90.598538,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 450,
+      "nombre": "Muelle De Lerma Sur",
+      "latitud": 19.810913,
+      "longitud": -90.594005,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 451,
+      "nombre": "Marina Sur",
+      "latitud": 19.812666,
+      "longitud": -90.591212,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 452,
+      "nombre": "Pemex Sur",
+      "latitud": 19.815853,
+      "longitud": -90.586451,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 453,
+      "nombre": "Parque Álvaro Obregón",
+      "latitud": 19.846758,
+      "longitud": -90.515983,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza",
+        "Koox 09 Bellavista-San José el Alto",
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 454,
+      "nombre": "Refaccionaria Sur",
+      "latitud": 19.822178,
+      "longitud": -90.575977,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 455,
+      "nombre": "Resurgimiento Sur",
+      "latitud": 19.82491,
+      "longitud": -90.570675,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 456,
+      "nombre": "Escénica Sur",
+      "latitud": 19.826779,
+      "longitud": -90.567332,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 457,
+      "nombre": "Calle 4 Con Dolores",
+      "latitud": 19.853587,
+      "longitud": -90.501938,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 458,
+      "nombre": "Calle Abelardo Carrillo Zavala",
+      "latitud": 19.854862,
+      "longitud": -90.501328,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 459,
+      "nombre": "Técnica 8 Norte",
+      "latitud": 19.804644,
+      "longitud": -90.603552,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 460,
+      "nombre": "La Capilla",
+      "latitud": 19.762262,
+      "longitud": -90.490318,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 461,
+      "nombre": "Cuchilla",
+      "latitud": 19.763548,
+      "longitud": -90.492382,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 462,
+      "nombre": "Calle 23 Con Calle 22",
+      "latitud": 19.763412,
+      "longitud": -90.494252,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 463,
+      "nombre": "Las Vías",
+      "latitud": 19.764472,
+      "longitud": -90.496265,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 464,
+      "nombre": "Calle 110 Norte",
+      "latitud": 19.845526,
+      "longitud": -90.512702,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 465,
+      "nombre": "Calle 24 Por 19",
+      "latitud": 19.766913,
+      "longitud": -90.495673,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 466,
+      "nombre": "Parque Chiná",
+      "latitud": 19.769188,
+      "longitud": -90.494997,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 467,
+      "nombre": "Kinder",
+      "latitud": 19.769758,
+      "longitud": -90.495279,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 468,
+      "nombre": "Calle 22 Con Calle 9",
+      "latitud": 19.771705,
+      "longitud": -90.49606,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 469,
+      "nombre": "Calle 22 Con Calle 7 Sur",
+      "latitud": 19.773523,
+      "longitud": -90.496292,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 470,
+      "nombre": "Centro De Usos Múltiples Sur",
+      "latitud": 19.776623,
+      "longitud": -90.497373,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 471,
+      "nombre": "Centro De Usos Múltiples Norte",
+      "latitud": 19.776753,
+      "longitud": -90.497223,
+      "rutas": []
+    },
+    {
+      "id": 472,
+      "nombre": "Casa Hogar Norte",
+      "latitud": 19.780008,
+      "longitud": -90.498073,
+      "rutas": []
+    },
+    {
+      "id": 473,
+      "nombre": "Lienzo Charro Sur",
+      "latitud": 19.78127,
+      "longitud": -90.498678,
+      "rutas": []
+    },
+    {
+      "id": 474,
+      "nombre": "Ocosingo",
+      "latitud": 19.848053,
+      "longitud": -90.489461,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 475,
+      "nombre": "Calle 116 Sur",
+      "latitud": 19.844755,
+      "longitud": -90.508223,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 476,
+      "nombre": "Lienzo Charro Norte",
+      "latitud": 19.782032,
+      "longitud": -90.498523,
+      "rutas": []
+    },
+    {
+      "id": 477,
+      "nombre": "Periférico Norte",
+      "latitud": 19.792088,
+      "longitud": -90.502058,
+      "rutas": []
+    },
+    {
+      "id": 478,
+      "nombre": "Campus Vi Norte",
+      "latitud": 19.803533,
+      "longitud": -90.504128,
+      "rutas": []
+    },
+    {
+      "id": 479,
+      "nombre": "Aeropuerto Sur",
+      "latitud": 19.813907,
+      "longitud": -90.50781,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 480,
+      "nombre": "Aeropuerto Norte",
+      "latitud": 19.814058,
+      "longitud": -90.507942,
+      "rutas": []
+    },
+    {
+      "id": 481,
+      "nombre": "Policía Sur",
+      "latitud": 19.814107,
+      "longitud": -90.521578,
+      "rutas": [
+        "Koox 20 Chiná"
+      ]
+    },
+    {
+      "id": 482,
+      "nombre": "Akumal",
+      "latitud": 19.846342,
+      "longitud": -90.488453,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 483,
+      "nombre": "Décima Octava",
+      "latitud": 19.804792,
+      "longitud": -90.490108,
+      "rutas": []
+    },
+    {
+      "id": 484,
+      "nombre": "Especialidades Caseta 3 Sur",
+      "latitud": 19.814446,
+      "longitud": -90.5246,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 485,
+      "nombre": "Refresquera Sur",
+      "latitud": 19.814535,
+      "longitud": -90.527928,
+      "rutas": []
+    },
+    {
+      "id": 486,
+      "nombre": "Av. Aviación - Parroquia San José Obrero",
+      "latitud": 19.841,
+      "longitud": -90.507348,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 487,
+      "nombre": "Bancos Patricio Trueba Sur",
+      "latitud": 19.821927,
+      "longitud": -90.531908,
+      "rutas": []
+    },
+    {
+      "id": 488,
+      "nombre": "Chichén Itzá",
+      "latitud": 19.853566,
+      "longitud": -90.493594,
+      "rutas": []
+    },
+    {
+      "id": 489,
+      "nombre": "Av. Ctm Norte",
+      "latitud": 19.856147,
+      "longitud": -90.492862,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula",
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 490,
+      "nombre": "Cam. Presidentes Norte",
+      "latitud": 19.857595,
+      "longitud": -90.489362,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 491,
+      "nombre": "Prolongación Av. Benito Juarez",
+      "latitud": 19.862741,
+      "longitud": -90.486345,
+      "rutas": [
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 492,
+      "nombre": "Parque San Antonio Sur",
+      "latitud": 19.853513,
+      "longitud": -90.485467,
+      "rutas": []
+    },
+    {
+      "id": 493,
+      "nombre": "Jardín De Niños Círculo Infantil",
+      "latitud": 19.848803,
+      "longitud": -90.497398,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 494,
+      "nombre": "Calle 20 Con Calle 19 Norte",
+      "latitud": 19.81868,
+      "longitud": -90.554436,
+      "rutas": []
+    },
+    {
+      "id": 495,
+      "nombre": "Mercadito Lerma 2",
+      "latitud": 19.801151,
+      "longitud": -90.609039,
+      "rutas": [
+        "Koox 22 Lerma - Tec",
+        "Koox 23 Kila - Marañón"
+      ]
+    },
+    {
+      "id": 496,
+      "nombre": "Calle Tumbo Con Calle Nance",
+      "latitud": 19.858478,
+      "longitud": -90.504782,
+      "rutas": [
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 497,
+      "nombre": "Calle 5 Con Calle 6",
+      "latitud": 19.838735,
+      "longitud": -90.504523,
+      "rutas": []
+    },
+    {
+      "id": 498,
+      "nombre": "Calle 12 Con Gabriel Macín",
+      "latitud": 19.854012,
+      "longitud": -90.507532,
+      "rutas": []
+    },
+    {
+      "id": 499,
+      "nombre": "Calle 104 Sur",
+      "latitud": 19.857347,
+      "longitud": -90.512103,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 500,
+      "nombre": "Calle 104 Cancha",
+      "latitud": 19.859094,
+      "longitud": -90.51018,
+      "rutas": []
+    },
+    {
+      "id": 501,
+      "nombre": "Calle Solidaridad",
+      "latitud": 19.85767,
+      "longitud": -90.509155,
+      "rutas": []
+    },
+    {
+      "id": 502,
+      "nombre": "Mirador",
+      "latitud": 19.858022,
+      "longitud": -90.507158,
+      "rutas": [
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2"
+      ]
+    },
+    {
+      "id": 503,
+      "nombre": "Lázaro Cárdenas Por Gral Martin Carrera",
+      "latitud": 19.863079,
+      "longitud": -90.49037,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 504,
+      "nombre": "Lazaro Cárdenas Por Gral Rómulo Díaz De La Vega",
+      "latitud": 19.863609,
+      "longitud": -90.490824,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 505,
+      "nombre": "Cdum Uacam",
+      "latitud": 19.830426,
+      "longitud": -90.558718,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 506,
+      "nombre": "Av Ctm Por Supermercado",
+      "latitud": 19.860749,
+      "longitud": -90.492913,
+      "rutas": [
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 507,
+      "nombre": "Calle Zafiro Con Av Ctm",
+      "latitud": 19.86085,
+      "longitud": -90.493086,
+      "rutas": [
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 508,
+      "nombre": "Parque Justo Sierra Méndez",
+      "latitud": 19.837845,
+      "longitud": -90.502024,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 509,
+      "nombre": "Calle 6 Por Pedro Moreno",
+      "latitud": 19.823315,
+      "longitud": -90.533931,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 510,
+      "nombre": "Av Ruiz Cortinez Por Hotel",
+      "latitud": 19.849048,
+      "longitud": -90.533981,
+      "rutas": [
+        "Koox 18 San Francisco",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 511,
+      "nombre": "Av Cuauhtemoc Con Calle Río Palizada",
+      "latitud": 19.843521,
+      "longitud": -90.516974,
+      "rutas": [
+        "Koox 09 Bellavista-San José el Alto",
+        "Ko'ox 13 Ampliación Concordia"
+      ]
+    },
+    {
+      "id": 512,
+      "nombre": "Calle 1 Campeche Con Cancha Fidel Velazquez",
+      "latitud": 19.872514,
+      "longitud": -90.49172,
+      "rutas": [
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 513,
+      "nombre": "Jardin De Niños El Huerto",
+      "latitud": 19.871377,
+      "longitud": -90.490256,
+      "rutas": []
+    },
+    {
+      "id": 514,
+      "nombre": "General Lombardi",
+      "latitud": 19.863299,
+      "longitud": -90.488836,
+      "rutas": [
+        "Koox 05 Plan Chac - Presidentes - Tula"
+      ]
+    },
+    {
+      "id": 515,
+      "nombre": "Álvaro Obregón Por Calle 14",
+      "latitud": 19.848993,
+      "longitud": -90.518789,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza",
+        "Koox 10 Morelos Minas",
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 516,
+      "nombre": "Tanque De Agua Colonia Jardines",
+      "latitud": 19.833512,
+      "longitud": -90.515989,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 517,
+      "nombre": "Parroquia Del Sagrado Corazón 2",
+      "latitud": 19.834381,
+      "longitud": -90.519385,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 518,
+      "nombre": "Calle Jalisco Por Av Colosio",
+      "latitud": 19.835815,
+      "longitud": -90.52174,
+      "rutas": [
+        "Koox 15 Jardines"
+      ]
+    },
+    {
+      "id": 519,
+      "nombre": "Cancha Solidaridad",
+      "latitud": 19.83924,
+      "longitud": -90.500105,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 520,
+      "nombre": "Estación De Autobuses",
+      "latitud": 19.823671,
+      "longitud": -90.532085,
+      "rutas": [
+        "Koox 26 Troncal Eje Hospitales"
+      ]
+    },
+    {
+      "id": 521,
+      "nombre": "Boleros Mercado",
+      "latitud": 19.842655,
+      "longitud": -90.532744,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 15 Jardines",
+        "Koox 16 Polvorín - Paso de las Águilas",
+        "Koox 18 San Francisco",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 522,
+      "nombre": "Mercado Oriente",
+      "latitud": 19.842691,
+      "longitud": -90.533579,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 523,
+      "nombre": "Av Ctm Estación De Servicio",
+      "latitud": 19.856807,
+      "longitud": -90.492631,
+      "rutas": [
+        "Koox 04 Tula - Presidentes - Plan Chac",
+        "Koox 05 Plan Chac - Presidentes - Tula",
+        "Koox 11 Fidel Velazquez"
+      ]
+    },
+    {
+      "id": 524,
+      "nombre": "Glorieta Del Infinito Norte",
+      "latitud": 19.815009,
+      "longitud": -90.529219,
+      "rutas": [
+        "Koox 20 Chiná",
+        "Koox 24 Miguel hidalgo",
+        "Koox 26 Troncal Eje Hospitales",
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 525,
+      "nombre": "Glorieta Del Infinito Sur",
+      "latitud": 19.815022,
+      "longitud": -90.529592,
+      "rutas": [
+        "Koox 20 Chiná",
+        "Koox 24 Miguel hidalgo",
+        "Koox 26 Troncal Eje Hospitales",
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 526,
+      "nombre": "Solidaridad",
+      "latitud": 19.837444,
+      "longitud": -90.498429,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 527,
+      "nombre": "Calle 18 Con Calle 11",
+      "latitud": 19.839885,
+      "longitud": -90.497495,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 528,
+      "nombre": "Cancha Esperanza",
+      "latitud": 19.842,
+      "longitud": -90.497,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 529,
+      "nombre": "Papaya",
+      "latitud": 19.843572,
+      "longitud": -90.495023,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 530,
+      "nombre": "Calle Zarco",
+      "latitud": 19.847802,
+      "longitud": -90.52305,
+      "rutas": [
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 531,
+      "nombre": "Av. Ramón Espinola Blanco Sur",
+      "latitud": 19.845597,
+      "longitud": -90.486808,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 532,
+      "nombre": "Hospital Naval",
+      "latitud": 19.844662,
+      "longitud": -90.492473,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 533,
+      "nombre": "Caimito",
+      "latitud": 19.845657,
+      "longitud": -90.493728,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 534,
+      "nombre": "Tamarindo",
+      "latitud": 19.845976,
+      "longitud": -90.497125,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche",
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 535,
+      "nombre": "Álvaro Obregón 1",
+      "latitud": 19.843817,
+      "longitud": -90.504168,
+      "rutas": [
+        "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 536,
+      "nombre": "Calle 116 Norte",
+      "latitud": 19.844798,
+      "longitud": -90.508221,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 537,
+      "nombre": "Calle 110 Sur",
+      "latitud": 19.845478,
+      "longitud": -90.512576,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 538,
+      "nombre": "Calle 16 Con Cuauhtémoc",
+      "latitud": 19.846963,
+      "longitud": -90.515992,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza",
+        "Koox 09 Bellavista-San José el Alto",
+        "Koox 10 Morelos Minas",
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 539,
+      "nombre": "Álvaro Obregón (Cuchilla)",
+      "latitud": 19.848621,
+      "longitud": -90.518076,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza",
+        "Koox 10 Morelos Minas",
+        "Koox 18 San Francisco"
+      ]
+    },
+    {
+      "id": 540,
+      "nombre": "Puente De La Ría",
+      "latitud": 19.850526,
+      "longitud": -90.52076,
+      "rutas": [
+        "Koox 08 Carmelo-Esperanza",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 541,
+      "nombre": "7 De Agosto",
+      "latitud": 19.853819,
+      "longitud": -90.522617,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 542,
+      "nombre": "Abarrotes Ramón Espinola Blanco Sur",
+      "latitud": 19.842788,
+      "longitud": -90.482987,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 543,
+      "nombre": "Imss Novia Del Mar",
+      "latitud": 19.854252,
+      "longitud": -90.526807,
+      "rutas": []
+    },
+    {
+      "id": 544,
+      "nombre": "Supermercado Ah-Kim-Pech Norte",
+      "latitud": 19.853132,
+      "longitud": -90.529794,
+      "rutas": []
+    },
+    {
+      "id": 545,
+      "nombre": "Román Piña Chán Sur",
+      "latitud": 19.850622,
+      "longitud": -90.532101,
+      "rutas": []
+    },
+    {
+      "id": 546,
+      "nombre": "San Martín",
+      "latitud": 19.846718,
+      "longitud": -90.533867,
+      "rutas": [
+        "Koox 18 San Francisco",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 547,
+      "nombre": "Plaza San Pedro",
+      "latitud": 19.843864,
+      "longitud": -90.53226,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá",
+        "Koox 15 Jardines",
+        "Koox 16 Polvorín - Paso de las Águilas",
+        "Koox 18 San Francisco",
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 548,
+      "nombre": "Deportivo 20 De Noviembre",
+      "latitud": 19.847247,
+      "longitud": -90.537115,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 549,
+      "nombre": "Concha Acústica Sur",
+      "latitud": 19.84315,
+      "longitud": -90.540696,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 550,
+      "nombre": "Calle 16 Con Calle 114",
+      "latitud": 19.845962,
+      "longitud": -90.509233,
+      "rutas": [
+        "Koox 10 Morelos Minas"
+      ]
+    },
+    {
+      "id": 551,
+      "nombre": "Villas De Kalá Sur",
+      "latitud": 19.840617,
+      "longitud": -90.482325,
+      "rutas": [
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 552,
+      "nombre": "Glorieta Pablo García Norte",
+      "latitud": 19.844008,
+      "longitud": -90.502673,
+      "rutas": [
+        "Koox 01 Troncal Eje Principal",
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche",
+        "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+        "Koox 08 Carmelo-Esperanza"
+      ]
+    },
+    {
+      "id": 553,
+      "nombre": "Ordaz Por 10B Sur",
+      "latitud": 19.856889,
+      "longitud": -90.519613,
+      "rutas": [
+        "Koox 29 Troncal Eje Norte"
+      ]
+    },
+    {
+      "id": 554,
+      "nombre": "Diaz Ordaz Por 10B Norte",
+      "latitud": 19.856998,
+      "longitud": -90.519198,
+      "rutas": []
+    },
+    {
+      "id": 555,
+      "nombre": "Hijos De Trabajadores Sur",
+      "latitud": 19.826851,
+      "longitud": -90.534921,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum",
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 556,
+      "nombre": "Prol. Allende Con C. Vicente Guerrero",
+      "latitud": 19.827092,
+      "longitud": -90.538656,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 557,
+      "nombre": "Prol. Allende Con C. 6 De Mayo",
+      "latitud": 19.823722,
+      "longitud": -90.537978,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 558,
+      "nombre": "Calle Lezmar por Prol. Bravo",
+      "latitud": 19.821019,
+      "longitud": -90.536353,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 559,
+      "nombre": "Calle Guadalupana por Mirador",
+      "latitud": 19.819482,
+      "longitud": -90.535478,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 560,
+      "nombre": "Tepeyac Por Perpetuo Socorro",
+      "latitud": 19.817956,
+      "longitud": -90.533957,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 561,
+      "nombre": "Supermercado Concordia",
+      "latitud": 19.831187,
+      "longitud": -90.49746,
+      "rutas": [
+        "Ko'ox 13 Ampliación Concordia",
+        "Koox 14 Kalá"
+      ]
+    },
+    {
+      "id": 562,
+      "nombre": "Trigésima Tercera Sur",
+      "latitud": 19.838788,
+      "longitud": -90.482347,
+      "rutas": [
+        "Koox 02 Colonial Campeche - Exhacienda Kala",
+        "Koox 03 Exhacienda Kala - Colonial Campeche"
+      ]
+    },
+    {
+      "id": 563,
+      "nombre": "Ic Turismo Norte",
+      "latitud": 19.817387,
+      "longitud": -90.537562,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 564,
+      "nombre": "Lopez Portillo Con Calle 6",
+      "latitud": 19.821855,
+      "longitud": -90.541478,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum",
+        "Koox 21 Kanisté - Samula - Zaragoza"
+      ]
+    },
+    {
+      "id": 565,
+      "nombre": "Calle 6 Con Prol. Allende",
+      "latitud": 19.822564,
+      "longitud": -90.537535,
+      "rutas": [
+        "Koox 19 San Antonio - Sascalum"
+      ]
+    },
+    {
+      "id": 566,
+      "nombre": "Hijos De Trabajadores Norte",
+      "latitud": 19.826061,
+      "longitud": -90.534816,
+      "rutas": []
+    },
+    {
+      "id": 567,
+      "nombre": "Parque Siglo Xxi",
+      "latitud": 19.805994,
+      "longitud": -90.492328,
+      "rutas": []
+    },
+    {
+      "id": 568,
+      "nombre": "Cendi Av. Central",
+      "latitud": 19.831201,
+      "longitud": -90.534801,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 569,
+      "nombre": "Pescadería El Ángel Norte",
+      "latitud": 19.833923,
+      "longitud": -90.534716,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    },
+    {
+      "id": 570,
+      "nombre": "Supermercado Central Norte",
+      "latitud": 19.837438,
+      "longitud": -90.535269,
+      "rutas": [
+        "Koox 27 Troncal Eje Central"
+      ]
+    }
+]
