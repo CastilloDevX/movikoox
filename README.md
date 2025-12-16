@@ -246,47 +246,152 @@ GET http://localhost:5000/instrucciones?inicio=19.830211,-90.515757&destino=19.8
 
 ```json
 {
-  "ok": true,
-  "start_stop": { "id": 57, "nombre": "Av. Gobernadores" },
-  "end_stop": { "id": 1, "nombre": "Alameda" },
-  "instructions": [
-    {
-      "from_stop": { "id": 57, "nombre": "Av. Gobernadores" },
-      "to_stop": { "id": 1, "nombre": "Alameda" },
-      "bus": "Koox 01 Troncal Eje Principal"
-    }
-  ],
-  "num_buses": 1,
-  "start_distance_km": 0.13,
-  "end_distance_km": 0.18
+    "isAprox": false,
+    "ok": true,
+    "summary": {
+        "bus_km": 4.59060276,
+        "eje_buses": 1,
+        "eta_bus_minutes": 18.3,
+        "eta_total_minutes": 24.61,
+        "eta_transfer_minutes": 4.0,
+        "eta_walk_minutes": 2.31,
+        "non_eje_buses": 1,
+        "num_buses": 2,
+        "walk_km": 0.17713712
+    },
+    "instructions": [
+        {
+            "distance_km": 0.0,
+            "eta_minutes": 0.0,
+            "from": {
+                "lat": 19.830211,
+                "lon": -90.515757
+            },
+            "to_stop": {
+                "id": 297,
+                "latitud": 19.830211,
+                "longitud": -90.515757,
+                "nombre": "Nochebuena",
+                "rutas": [
+                    "Koox 15 Jardines"
+                ]
+            },
+            "type": "walk"
+        },
+
+        {
+            "bus": "Koox 15 Jardines",
+            "distance_km": 2.40502248,
+            "eta_minutes": 10.42,
+            "from_stop": {
+                "id": 297,
+                "latitud": 19.830211,
+                "longitud": -90.515757,
+                "nombre": "Nochebuena",
+                "rutas": [
+                    "Koox 15 Jardines"
+                ]
+            },
+            "isEje": false,
+            "stops_count": 13,
+            "to_stop": {
+                "id": 18,
+                "latitud": 19.843368,
+                "longitud": -90.527729,
+                "nombre": "Brasil",
+                "rutas": [
+                    "Koox 01 Troncal Eje Principal",
+                    "Ko'ox 13 Ampliación Concordia",
+                    "Koox 14 Kalá",
+                    "Koox 15 Jardines",
+                    "Koox 16 Polvorín - Paso de las Águilas"
+                ]
+            },
+            "type": "bus"
+        },
+        {
+            "eta_minutes": 4.0,
+            "type": "transfer"
+        },
+        {
+            "bus": "Koox 01 Troncal Eje Principal",
+            "distance_km": 2.18558028,
+            "eta_minutes": 7.89,
+            "from_stop": {
+                "id": 18,
+                "latitud": 19.843368,
+                "longitud": -90.527729,
+                "nombre": "Brasil",
+                "rutas": [
+                    "Koox 01 Troncal Eje Principal",
+                    "Ko'ox 13 Ampliación Concordia",
+                    "Koox 14 Kalá",
+                    "Koox 15 Jardines",
+                    "Koox 16 Polvorín - Paso de las Águilas"
+                ]
+            },
+            "isEje": true,
+            "stops_count": 4,
+            "to_stop": {
+                "id": 138,
+                "latitud": 19.842738,
+                "longitud": -90.506872,
+                "nombre": "Av. Aviación",
+                "rutas": [
+                    "Koox 01 Troncal Eje Principal",
+                    "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+                    "Koox 08 Carmelo-Esperanza"
+                ]
+            },
+            "type": "bus"
+        },
+        {
+            "distance_km": 0.17713712,
+            "eta_minutes": 2.31,
+            "from_stop": {
+                "id": 138,
+                "latitud": 19.842738,
+                "longitud": -90.506872,
+                "nombre": "Av. Aviación",
+                "rutas": [
+                    "Koox 01 Troncal Eje Principal",
+                    "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+                    "Koox 08 Carmelo-Esperanza"
+                ]
+            },
+            "to": {
+                "lat": 19.842192,
+                "lon": -90.508463
+            },
+            "type": "walk"
+        }
+    ],
 }
 ```
 
 ---
-
-# ➕ Endpoint faltante: Rutas
-
-Este endpoint **NO rompe nada** y usa directamente `rutas.json`.
 
 ## 🔹 GET /rutas
 
 Devuelve **todas las rutas** disponibles.
 
 ```http
-GET /rutas
+GET http://localhost:5000/rutas
 ```
 
 ### Respuesta
 
 ```json
 {
-  "ok": true,
-  "body": [
-    {
-      "nombre": "Koox 01 Troncal Eje Principal",
-      "paradas": [1, 2, 3, 4]
-    }
-  ]
+    "ok": true,
+    "body": [
+        {
+            "nombre": "Koox 01 Troncal Eje Principal",
+            "paradas": [1, 2, 3, 4] /* Id's */
+        }
+
+        ... 26 más
+    ]
 }
 ```
 
@@ -306,12 +411,43 @@ GET http://localhost:5000/rutas/koox01
 
 ```json
 {
-  "ok": true,
-  "nombre": "Koox 01 Troncal Eje Principal",
-  "paradas": [
-    { "id": 1, "nombre": "Alameda" },
-    { "id": 2, "nombre": "Centro Histórico" }
-  ]
+    "nombre": "Koox 01 Troncal Eje Principal",
+    "ok": true,
+    "paradas": [
+        {
+            "id": 12,
+            "latitud": 19.843619,
+            "longitud": -90.503215,
+            "nombre": "Álvaro Obregón",
+            "rutas": [
+                "Koox 01 Troncal Eje Principal",
+                "Koox 07 Amp. Bellavista - Revolución Circ. 2",
+                "Koox 08 Carmelo-Esperanza"
+            ]
+        },
+        {
+            "id": 10,
+            "latitud": 19.842031,
+            "longitud": -90.506114,
+            "nombre": "La Huayita",
+            "rutas": [
+                "Koox 01 Troncal Eje Principal",
+                "Koox 06 Amp. Bellavista - Revolución Circ. 1"
+            ]
+        },
+        {
+            "id": 138,
+            "latitud": 19.842738,
+            "longitud": -90.506872,
+            "nombre": "Av. Aviación",
+            "rutas": [
+                "Koox 01 Troncal Eje Principal",
+                "Koox 06 Amp. Bellavista - Revolución Circ. 1",
+                "Koox 08 Carmelo-Esperanza"
+            ]
+        },
+        ... más
+    ]
 }
 ```
 
