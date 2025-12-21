@@ -1,47 +1,86 @@
-# 🚌 KO'OX API – Transporte Público Campeche
+# 🚌 MOVIKOOX – API de Rutas Inteligentes de Transporte Público
 
-API REST construida con **Flask** para consultar información del sistema de transporte **KO'OX Campeche**, incluyendo:
+MOVIKOOX es una **API REST en Flask** diseñada para calcular rutas óptimas de transporte público urbano, combinando **caminatas y trayectos en camión**, priorizando **menos transbordos** y **rutas de tipo Eje** (Eje Principal, Eje Norte, etc.) para ofrecer trayectos **claros, realistas y eficientes**.
 
-* 📍 Paradas
-* 🚌 Rutas
-* 📏 Parada más cercana
-* 🧭 Instrucciones óptimas entre dos puntos (A* minimizando cambios de camión)
-
-La API está pensada para usarse desde:
-
-* Web
-* Apps móviles
-* Mapas interactivos
+El sistema está pensado para integrarse fácilmente con aplicaciones móviles, web o sistemas de mapas.
 
 ---
 
-## 📦 Estructura del proyecto
+## 📁 Estructura del Proyecto
 
 ```
-/
-├── main.py
-└── db/
-    ├── paradas.json
-    └── rutas.json
+MOVIKOOX/
+│
+├── api/
+│   └── v1/
+│       ├── __init__.py
+│       ├── data.py        # Carga de datos y constantes globales
+│       ├── utils.py       # Algoritmos y lógica principal
+│       └── endpoints.py   # Endpoints de la API v1
+│
+├── db/
+│   ├── paradas.json       # Información de paradas
+│   └── rutas.json         # Información de rutas
+│
+├── app.py                 # Punto de entrada principal
+├── last_app.py            # Versión anterior (backup)
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-## 🚀 Ejecutar la API
+## ⚙️ Requisitos
 
-### 1. Instalar dependencias
+* Python **3.9 o superior**
+* pip
+* Virtualenv (recomendado)
+
+---
+
+## 🚀 Instalación y Ejecución
+
+### 1️⃣ Clonar el repositorio
+
+```bash
+git clone https://github.com/tu-usuario/movikoox.git
+cd movikoox
+```
+
+### 2️⃣ Crear el entorno virtual
+
+```bash
+python -m venv venv
+```
+
+### 3️⃣ Activar el entorno virtual
+
+**Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+### 4️⃣ Instalar dependencias
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Ejecutar
+### 5️⃣ Ejecutar el servidor
 
 ```bash
-python main.py
+python app.py
 ```
 
-La API quedará disponible en:
+El servidor se levantará en:
 
 ```
 http://localhost:5000
@@ -49,413 +88,197 @@ http://localhost:5000
 
 ---
 
-## 📍 Endpoints disponibles
+## 🌐 Versionado de la API
+
+Todos los endpoints están versionados bajo:
+
+```
+/api/v1
+```
+
+Esto permite evolucionar el sistema sin romper compatibilidad futura.
+
+## 📍 Endpoints Disponibles
+
+### 🔹 1. Obtener todas las paradas
+
+```
+GET /api/v1/paradas
+```
+
+**Descripción:**
+Devuelve la lista completa de paradas registradas.
 
 ---
 
-## 🔹 GET /paradas
-
-Devuelve **todas las paradas KO'OX**.
-
-### Ejemplo
+### 🔹 2. Obtener una parada por ID
 
 ```
-GET http://localhost:5000/paradas
+GET /api/v1/paradas/<id>
 ```
 
-### Respuesta
+**Descripción:**
+Devuelve la información de una parada específica según su ID.
+
+---
+
+### 🔹 3. Obtener la parada más cercana
+
+```
+GET /api/v1/paradas/cercana?latitud=LAT&longitud=LON
+```
+
+**Descripción:**
+Calcula la parada más cercana a una ubicación geográfica usando distancia Haversine.
+
+**Respuesta:**
 
 ```json
 {
-    "ok": true,
-    "body": [
-        {
-            "id": 1,
-            "latitud": 19.841517,
-            "longitud": -90.534564,
-            "nombre": "Alameda",
-            "rutas": [
-                "Koox 01 Troncal Eje Principal",
-                "Ko'ox 13 Ampliación Concordia",
-                "Koox 14 Kalá",
-                "Koox 27 Troncal Eje Central",
-                "Koox 29 Troncal Eje Norte"
-            ]
-        },
-        {
-            "id": 2,
-            "latitud": 19.843134,
-            "longitud": -90.530806,
-            "nombre": "Chihuahua",
-            "rutas": [
-                "Koox 01 Troncal Eje Principal",
-                "Ko'ox 13 Ampliación Concordia",
-                "Koox 14 Kalá",
-                "Koox 15 Jardines",
-                "Koox 16 Polvorín - Paso de las águilas"
-            ]
-        },
-        ... 568 más
-    ]
+  "ok": true,
+  "body": { ... },
+  "distance_km": 0.23
 }
 ```
 
 ---
 
-## 🔹 GET /paradas/{id}
-
-Obtiene una **parada específica** por su ID.
-
-### Ejemplo
+### 🔹 4. Obtener paradas por nombre de ruta
 
 ```
-GET http://localhost:5000/paradas/1
+GET /api/v1/paradas/bus/<nombre>
 ```
 
-### Respuesta
+**Descripción:**
+Devuelve todas las paradas que pertenecen a una ruta de camión específica.
+Soporta:
+
+* Coincidencias parciales
+* Coincidencias por número
+* Acentos y variaciones de texto
+
+Ejemplos:
+
+```
+/paradas/bus/Koox15
+```
+```
+/paradas/bus/SanFrancisco
+```
+
+## ⭐ 5. Calcular instrucciones de viaje (ENDPOINT PRINCIPAL)
+
+```
+GET /api/v1/instrucciones?inicio=LAT,LON&destino=LAT,LON
+```
+
+### 📌 ¿Qué hace este endpoint?
+
+Este endpoint calcula **la mejor ruta completa** desde un punto inicial hasta un destino final, devolviendo:
+
+* Caminata inicial a la parada más cercana
+* Tramos de camión organizados
+* Caminata final al destino
+* Distancias reales
+* Tiempo estimado por tramo
+* Resumen total del viaje
+
+---
+
+## 🧠 ¿Cómo funciona el algoritmo?
+
+### 🔸 1. Paradas más cercanas
+
+Se buscan las paradas más cercanas al inicio y al destino usando distancia geográfica.
+
+---
+
+### 🔸 2. Grafo de transporte
+
+El sistema modela el transporte como un **grafo de estados**:
+
+```
+(parada_id, ruta)
+```
+
+Cada estado representa estar en una parada específica dentro de una ruta específica.
+
+### 🔸 3. Algoritmo de búsqueda (Dijkstra modificado)
+
+Se utiliza un algoritmo de costo mínimo que **prioriza**:
+
+1. **Menor número de camiones**
+2. **Rutas tipo Eje**
+3. **Menor distancia total**
+
+Esto se logra usando una función de costo ponderada.
+
+### 🔸 4. Preferencia por camiones de Eje
+
+Las rutas que contienen palabras como:
+
+* `Eje`
+* `Troncal`
+* `Principal`
+
+reciben **menor penalización**, haciendo que el algoritmo las prefiera automáticamente cuando son viables.
+
+Esto refleja el comportamiento real del transporte urbano:
+👉 *Los ejes suelen ser más rápidos, frecuentes y confiables.*
+
+### 🔸 5. Segmentación clara del viaje
+
+El resultado se divide en **segmentos entendibles**:
+
+* 🚶 Caminatas
+* 🚌 Tramos de camión
+* 📍 Paradas origen y destino
+* ⏱️ Tiempo estimado por tramo
+
+## 📤 Ejemplo de respuesta del endpoint `/instrucciones`
 
 ```json
 {
-    "ok": true,
-    "body": {
-        "id": 1,
-        "latitud": 19.841517,
-        "longitud": -90.534564,
-        "nombre": "Alameda",
-        "rutas": [
-        "Koox 01 Troncal Eje Principal",
-        "Ko'ox 13 Ampliación Concordia",
-        "Koox 14 Kalá",
-        "Koox 27 Troncal Eje Central",
-        "Koox 29 Troncal Eje Norte"
-        ]
+  "ok": true,
+  "instructions": [
+    {
+      "type": "walk",
+      "distance_km": 0.3,
+      "minutes": 4.2
     },
-}
-```
-
----
-
-## 🔹 GET /paradas/bus/{nombre}
-
-Devuelve todas las paradas por donde pasa un **camión específico**.
-
-✔ No distingue mayúsculas
-✔ Acepta búsquedas parciales
-
-### Ejemplo
-
-```
-GET http://localhost:5000/paradas/bus/koox029
-```
-
-### Respuesta
-
-```json
-{
-    "ok": true,
-    "body": [
-        {
-            "id": 1,
-            "latitud": 19.841517,
-            "longitud": -90.534564,
-            "nombre": "Alameda",
-            "rutas": [
-                "Koox 01 Troncal Eje Principal",
-                "Ko'ox 13 Ampliación Concordia",
-                "Koox 14 Kalá",
-                "Koox 27 Troncal Eje Central",
-                "Koox 29 Troncal Eje Norte"
-            ]
-        },
-        {
-            "id": 19,
-            "latitud": 19.843275,
-            "longitud": -90.531607,
-            "nombre": "Circuito Baluartes",
-            "rutas": [
-                "Koox 01 Troncal Eje Principal",
-                "Ko'ox 13 Ampliación Concordia",
-                "Koox 14 Kalá",
-                "Koox 15 Jardines",
-                "Koox 16 Polvorín - Paso de las á1guilas",
-                "Koox 18 San Francisco",
-                "Koox 29 Troncal Eje Norte"
-            ]
-        },
-    ]
-}
-```
-
----
-
-## 🔹 GET /paradas/cercana
-
-Devuelve la **parada más cercana** a una coordenada GPS.
-
-### Parámetros
-
-* `latitud`
-* `longitud`
-
-### Ejemplo
-
-```
-GET http://localhost:5000/paradas/cercana?latitud=19.791219&longitud=-90.619835
-```
-
-### Respuesta
-
-```json
-{
-    "distance_km": 0.01046,
-    "ok": true,
-    "body": {
-        "id": 441,
-        "latitud": 19.791219,
-        "longitud": -90.619935,
-        "nombre": "Tec. De Lerma 2",
-        "rutas": [
-            "Koox 22 Lerma - Tec",
-            "Koox 23 Kila - Marañón"
-        ]
+    {
+      "type": "bus",
+      "bus": "Koox 01 Troncal Eje Principal",
+      "stops_count": 4,
+      "distance_km": 2.1,
+      "minutes": 8.6
     }
+  ],
+  "summary": {
+    "num_buses": 1,
+    "bus_km": 2.1,
+    "walk_km": 0.3,
+    "total_minutes": 12.8
+  }
 }
 ```
 
----
+## ✅ ¿Por qué este algoritmo es ideal para el proyecto?
 
-## 🔹 GET /instrucciones
+✔️ No depende de APIs externas
+✔️ Escala bien con más rutas
+✔️ Prioriza decisiones humanas reales
+✔️ Evita rutas innecesarias
+✔️ Produce instrucciones claras para el usuario final
 
-Calcula la **mejor ruta** entre dos puntos GPS usando **A***, minimizando:
+Es una solución **robusta, extensible y realista** para transporte público urbano.
 
-* Cambios de camión
-* Distancia total
+## 🔮 Futuras mejoras (roadmap)
 
-### Parámetros
+* ⏰ ETA por hora del día
+* 📄 Documentación OpenAPI / Swagger
 
-* `inicio=lat,lon`
-* `destino=lat,lon`
+## 👨‍💻 Autor
 
-### Ejemplo
-
-```
-GET http://localhost:5000/instrucciones?inicio=19.830211,-90.515757&destino=19.842192,-90.508463
-```
-
-### Respuesta
-
-```json
-{
-    "isAprox": false,
-    "ok": true,
-    "summary": {
-        "bus_km": 4.59060276,
-        "eje_buses": 1,
-        "eta_bus_minutes": 18.3,
-        "eta_total_minutes": 24.61,
-        "eta_transfer_minutes": 4.0,
-        "eta_walk_minutes": 2.31,
-        "non_eje_buses": 1,
-        "num_buses": 2,
-        "walk_km": 0.17713712
-    },
-    "instructions": [
-        {
-            "distance_km": 0.0,
-            "eta_minutes": 0.0,
-            "from": {
-                "lat": 19.830211,
-                "lon": -90.515757
-            },
-            "to_stop": {
-                "id": 297,
-                "latitud": 19.830211,
-                "longitud": -90.515757,
-                "nombre": "Nochebuena",
-                "rutas": [
-                    "Koox 15 Jardines"
-                ]
-            },
-            "type": "walk"
-        },
-
-        {
-            "bus": "Koox 15 Jardines",
-            "distance_km": 2.40502248,
-            "eta_minutes": 10.42,
-            "from_stop": {
-                "id": 297,
-                "latitud": 19.830211,
-                "longitud": -90.515757,
-                "nombre": "Nochebuena",
-                "rutas": [
-                    "Koox 15 Jardines"
-                ]
-            },
-            "isEje": false,
-            "stops_count": 13,
-            "to_stop": {
-                "id": 18,
-                "latitud": 19.843368,
-                "longitud": -90.527729,
-                "nombre": "Brasil",
-                "rutas": [
-                    "Koox 01 Troncal Eje Principal",
-                    "Ko'ox 13 Ampliación Concordia",
-                    "Koox 14 Kalá",
-                    "Koox 15 Jardines",
-                    "Koox 16 Polvorín - Paso de las Águilas"
-                ]
-            },
-            "type": "bus"
-        },
-        {
-            "eta_minutes": 4.0,
-            "type": "transfer"
-        },
-        {
-            "bus": "Koox 01 Troncal Eje Principal",
-            "distance_km": 2.18558028,
-            "eta_minutes": 7.89,
-            "from_stop": {
-                "id": 18,
-                "latitud": 19.843368,
-                "longitud": -90.527729,
-                "nombre": "Brasil",
-                "rutas": [
-                    "Koox 01 Troncal Eje Principal",
-                    "Ko'ox 13 Ampliación Concordia",
-                    "Koox 14 Kalá",
-                    "Koox 15 Jardines",
-                    "Koox 16 Polvorín - Paso de las Águilas"
-                ]
-            },
-            "isEje": true,
-            "stops_count": 4,
-            "to_stop": {
-                "id": 138,
-                "latitud": 19.842738,
-                "longitud": -90.506872,
-                "nombre": "Av. Aviación",
-                "rutas": [
-                    "Koox 01 Troncal Eje Principal",
-                    "Koox 06 Amp. Bellavista - Revolución Circ. 1",
-                    "Koox 08 Carmelo-Esperanza"
-                ]
-            },
-            "type": "bus"
-        },
-        {
-            "distance_km": 0.17713712,
-            "eta_minutes": 2.31,
-            "from_stop": {
-                "id": 138,
-                "latitud": 19.842738,
-                "longitud": -90.506872,
-                "nombre": "Av. Aviación",
-                "rutas": [
-                    "Koox 01 Troncal Eje Principal",
-                    "Koox 06 Amp. Bellavista - Revolución Circ. 1",
-                    "Koox 08 Carmelo-Esperanza"
-                ]
-            },
-            "to": {
-                "lat": 19.842192,
-                "lon": -90.508463
-            },
-            "type": "walk"
-        }
-    ],
-}
-```
-
----
-
-## 🔹 GET /rutas
-
-Devuelve **todas las rutas** disponibles.
-
-```http
-GET http://localhost:5000/rutas
-```
-
-### Respuesta
-
-```json
-{
-    "ok": true,
-    "body": [
-        {
-            "nombre": "Koox 01 Troncal Eje Principal",
-            "paradas": [1, 2, 3, 4] /* Id's */
-        }
-
-        ... 26 más
-    ]
-}
-```
-
----
-
-## 🔹 GET /rutas/{nombre}
-
-Devuelve una **ruta específica** con **paradas completas y ordenadas**.
-
-### Ejemplo
-
-```
-GET http://localhost:5000/rutas/koox01
-```
-
-### Respuesta
-
-```json
-{
-    "nombre": "Koox 01 Troncal Eje Principal",
-    "ok": true,
-    "paradas": [
-        {
-            "id": 12,
-            "latitud": 19.843619,
-            "longitud": -90.503215,
-            "nombre": "Álvaro Obregón",
-            "rutas": [
-                "Koox 01 Troncal Eje Principal",
-                "Koox 07 Amp. Bellavista - Revolución Circ. 2",
-                "Koox 08 Carmelo-Esperanza"
-            ]
-        },
-        {
-            "id": 10,
-            "latitud": 19.842031,
-            "longitud": -90.506114,
-            "nombre": "La Huayita",
-            "rutas": [
-                "Koox 01 Troncal Eje Principal",
-                "Koox 06 Amp. Bellavista - Revolución Circ. 1"
-            ]
-        },
-        {
-            "id": 138,
-            "latitud": 19.842738,
-            "longitud": -90.506872,
-            "nombre": "Av. Aviación",
-            "rutas": [
-                "Koox 01 Troncal Eje Principal",
-                "Koox 06 Amp. Bellavista - Revolución Circ. 1",
-                "Koox 08 Carmelo-Esperanza"
-            ]
-        },
-        ... más
-    ]
-}
-```
-
----
-
-## 🧠 Detalles técnicos importantes
-
-* El algoritmo **A*** penaliza cambios de camión
-* Las rutas se calculan por **paradas reales**
-* El sistema es compatible con mapas (Leaflet, Mapbox)
-* CORS habilitado para Flutter Web y apps
+Proyecto desarrollado como sistema de rutas inteligentes para transporte público de Campeche.
+> **Jose Manuel Castillo Queh**
