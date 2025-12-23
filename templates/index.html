@@ -1,0 +1,341 @@
+<!-- 
+   Autor: Jose Manuel Castillo Queh 
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movikoox</title>
+  <!-- Tailwind CSS CDN  Setup-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- =========================
+       HERO
+  ========================= -->
+  <section class="bg-white py-16 px-6">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      
+      <div id="kooxtitle">
+        <h1 class="primary-color text-4xl md:text-7xl font-bold mb-4">
+          Movikoox
+        </h1>
+        <p class="text-xl text-gray-600 mb-6">
+          Un proyecto ciudadano para mejorar el acceso a la información del
+          transporte público en Campeche, de forma clara, gratuita y moderna.
+        </p>
+      </div>
+
+      <div class="flex justify-center">
+        <img 
+          src="{{ url_for('static', filename='img/icons/kooxbus.png') }}" 
+          alt="Bus Ko'ox"
+          class="w-60 md:w-106 scale-130"
+          id="kooxbus"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       INFORMACIÓN CLARA
+  ========================= -->
+  <section class="py-14 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="primary-color max-w-3xl mx-auto text-3xl font-bold mb-10">
+        Información clara, accesible y pensada para personas reales
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="background-color p-6 rounded-xl">
+          <div class="text-3xl mb-4 flex justify-center" >
+            <img 
+              src="{{ url_for('static', filename='img/icons/location.png') }}" 
+              alt="Bus Ko'ox"
+              class="w-25 scale-130 secondary-bold-img-color"
+            />
+          </div>
+
+          <p class="font-semibold text-xl mb-2 secondary-bold-txt-color">Paradas claras</p>
+          <p class="text-sm text-gray-600">
+            Ubicaciones precisas y fáciles de identificar.
+          </p>
+        </div>
+
+        <div class="background-color p-6 rounded-xl">
+          <div class="text-3xl mb-4 flex justify-center" >
+            <img 
+              src="{{ url_for('static', filename='img/icons/bus_stop.png') }}" 
+              alt="Bus Ko'ox"
+              class="w-25 scale-130 secondary-bold-img-color"
+            />
+          </div>
+
+          <p class="font-semibold text-xl mb-2 secondary-bold-txt-color">Rutas entendibles</p>
+          <p class="text-sm text-gray-600">
+            Trayectos explicados paso a paso.
+          </p>
+        </div>
+
+        <div class="background-color p-6 rounded-xl">
+          <div class="text-3xl mb-4 flex justify-center" >
+            <img 
+              src="{{ url_for('static', filename='img/icons/walk.png') }}" 
+              alt="Bus Ko'ox"
+              class="w-25 scale-130 secondary-bold-img-color"
+            />
+          </div>
+
+          <p class="font-semibold text-xl mb-2 secondary-bold-txt-color">Pasos claros</p>
+          <p class="text-sm text-gray-600">
+            Camina, toma el bus y llega sin confusión.
+          </p>
+        </div>
+      </div>
+      
+      <p class="max-w-3xl mx-auto text-3xl mt-10 secondary-bold-txt-color">
+        Sin registros. Sin pagos. Sin complicaciones.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       HECHO EN CAMPECHE
+  ========================= -->
+  <section class="primary-background-color text-white py-6 px-6">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 items-center">
+
+      <div class="flex justify-center">
+        <img 
+          src="{{ url_for('static', filename='img/icons/campeche_map.png') }}"
+          alt="Mapa de Campeche"
+          class="w-72 md:w-96"
+        />
+      </div>
+
+
+      <div>
+        <h2 class="text-4xl font-bold mb-4 text-white">
+          Hecho en Campeche
+        </h2>
+
+        <p class="text-2xl text-white">
+          <span class="font-bold text-white">Una solución creada para Campeche, no importada.</span>
+          Movikoox entiende cómo se mueve Campeche porque fue 
+          creado aquí. No es una adaptación genérica, es una 
+          solución local a un problema local.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       ¿POR QUÉ MOVIKOOX?
+  ========================= -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 primary-color">
+        ¿Por qué Movikoox?
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+
+        <div>
+          <div class="text-4xl mb-4 flex justify-center">
+            <img 
+              src="{{ url_for('static', filename='img/icons/unknow.png') }}"
+              alt="Mapa de Campeche"
+              class="md:w-35"
+            />
+          </div>
+          <p class="text-2xl font-bold mb-2 primary-color">Reduce confusión</p>
+          <p class="text-sm text-gray-600">
+            Menos dudas al moverte por la ciudad.
+          </p>
+        </div>
+
+        <div>
+          <div class="text-4xl mb-4 flex justify-center">
+            <img 
+              src="{{ url_for('static', filename='img/icons/timer.png') }}"
+              alt="Mapa de Campeche"
+              class="md:w-35"
+            />
+          </div>
+          <p class="text-2xl font-bold mb-2 primary-color">Ahorra tiempo</p>
+          <p class="text-sm text-gray-600">
+            Trayectos más claros y eficientes.
+          </p>
+        </div>
+
+        <div>
+          <div class="text-4xl mb-4 flex justify-center">
+            <img 
+              src="{{ url_for('static', filename='img/icons/map_icon.png') }}"
+              alt="Mapa de Campeche"
+              class="md:w-35 scale-110"
+            />
+          </div>
+          <p class="text-2xl font-bold mb-2 primary-color">Facilita moverse</p>
+          <p class="text-sm text-gray-600">
+            Pensado para estudiantes, trabajadores y visitantes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       AVANCES DEL PROYECTO
+  ========================= -->
+<section class="bg-white py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6 primary-color">
+      Avances del proyecto
+    </h2>
+
+    <p class="max-w-4xl mx-auto text-xl font-semibold mb-12">
+      Movikoox es un proyecto en constante evolución. En esta sección compartimos avances importantes, mejoras y próximos pasos del proyecto.
+    </p>
+
+    <div class="card max-w-2xl mx-auto border-4 border-[#922b3e] rounded-2xl overflow-hidden shadow-lg mb-16">
+      <div class="h-48 bg-cover bg-center relative" 
+        style="background-image: url('https://images.pexels.com/photos/6092052/pexels-photo-6092052.jpeg?_gl=1*1x3usju*_ga*MjkwNzc2MzYxLjE3NjY0NjAyNzY.*_ga_8JE65Q40S6*czE3NjY0NzE4NzUkbzMkZzEkdDE3NjY0NzI3OTQkajIzJGwwJGgw');"
+      >
+      
+        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+            <div class="bg-white p-4 rounded-full shadow-xl">
+                <img 
+                  src="{{ url_for('static', filename='img/icons/map_icon.png') }}"
+                  alt="Mapa de Campeche"
+                  class="w-12"
+                />
+            </div>
+        </div>
+      </div>
+      
+      <div class="p-8 text-left bg-white">
+        <h3 class="text-2xl font-bold primary-color mb-3">
+          Rutas y paradas estructuradas
+        </h3>
+        <p class="text-gray-600 font-medium leading-tight mb-6">
+          Se consolidó una base de datos organizada de paradas y rutas KO'Ox, permitiendo mostrar trayectos claros y consistentes dentro de Campeche.
+        </p>
+        <p class="text-right text-sm font-bold">
+          22/12/2025
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div class="card rounded-2xl overflow-hidden shadow-md flex flex-col">
+        <div class="h-24 bg-cover bg-center" 
+          style="background-image: url('https://images.pexels.com/photos/32204736/pexels-photo-32204736.jpeg?_gl=1*kll0tn*_ga*MjkwNzc2MzYxLjE3NjY0NjAyNzY.*_ga_8JE65Q40S6*czE3NjY0NzE4NzUkbzMkZzEkdDE3NjY0NzMyMjQkajQ1JGwwJGgw');"></div>
+        
+          <div class="bg-[#f0f0f0] p-4 flex-grow flex flex-col justify-between">
+          <h4 class="text-lg font-bold text-gray-600">Prioridad a rutas troncales (Ejes)</h4>
+          <span class="text-right text-xs font-bold text-gray-400 mt-4">20/12/2025</span>
+        </div>
+      </div>
+
+      <div class="card rounded-2xl overflow-hidden shadow-md flex flex-col">
+        <div class="h-24 bg-cover bg-center" 
+        style="background-image: url('https://images.pexels.com/photos/32204734/pexels-photo-32204734.jpeg?_gl=1*1r5g1a0*_ga*MjkwNzc2MzYxLjE3NjY0NjAyNzY.*_ga_8JE65Q40S6*czE3NjY0NzE4NzUkbzMkZzEkdDE3NjY0NzMyNjUkajQkbDAkaDA.');"></div>
+        
+        <div class="bg-[#f0f0f0] p-4 flex-grow flex flex-col justify-between">
+          <h4 class="text-lg font-bold text-gray-600">Tiempos aproximados de llegada</h4>
+          <span class="text-right text-xs font-bold text-gray-400 mt-4">19/12/2025</span>
+        </div>
+      </div>
+
+      <div class="card rounded-2xl overflow-hidden shadow-md flex flex-col">
+        <div class="h-24 bg-cover bg-center" 
+        style="background-image: url('https://images.pexels.com/photos/32204746/pexels-photo-32204746.jpeg?_gl=1*1j3orju*_ga*MjkwNzc2MzYxLjE3NjY0NjAyNzY.*_ga_8JE65Q40S6*czE3NjY0NzE4NzUkbzMkZzEkdDE3NjY0NzMzMTAkajQ3JGwwJGgw');"></div>
+        
+        <div class="bg-[#f0f0f0] p-4 flex-grow flex flex-col justify-between">
+          <h4 class="text-lg font-bold text-gray-600">Pasos de caminata y uso de camiones</h4>
+          <span class="text-right text-xs font-bold text-gray-400 mt-4">10/12/2025</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- =========================
+       ACCESO
+  ========================= -->
+  <section class="primary-background-color text-white py-6 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-white">
+      Acceso fácil, desde cualquier lugar
+    </h2>
+
+    <div class="flex justify-center gap-6 text-4xl">
+      <img 
+        src="{{ url_for('static', filename='img/icons/android.png') }}"
+        alt="Andriod"
+        class="w-20 md:w-30"
+      />
+      <img 
+        src="{{ url_for('static', filename='img/icons/ios.png') }}"
+        alt="Andriod"
+        class="w-20 md:w-30 scale-80"
+      />
+    </div>
+
+    <p class="text-gray-200 mt-6 text-white">
+      Próximamente
+    </p>
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+  <footer class="background-color py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-sm text-gray-600">
+
+      <div>
+        <h4 class="font-semibold mb-2 text-gray-800">Movikoox</h4>
+        <p>
+          Proyecto ciudadano para mejorar la movilidad en Campeche.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2 text-gray-800">Propósito</h4>
+        <p>
+          Reducir la desinformación y facilitar el transporte público.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2 text-gray-800">Autor</h4>
+        <p>
+          Desarrollado por José Manuel Castillo Queh.<br>
+          Proyecto independiente en fase BETA.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="text-center text-xs text-gray-400 mt-8">
+      © 2025 Movikoox - Proyecto ciudadano
+    </div>
+  </footer>
+
+</body>
+</html>

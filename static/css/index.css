@@ -1,0 +1,63 @@
+body {
+    font-family: "Prompt", sans-serif;
+}
+
+* {
+    color: #7E7E7E !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.primary-color {
+    color: #72293c !important;
+}
+
+.primary-background-color {
+    background-color: #72293c !important;
+}
+.secondary-bold-img-color {
+    filter: 
+        grayscale(100%)
+        brightness(0.4)
+        contrast(1.1);
+}
+
+.secondary-bold-txt-color {
+    color: #636363 !important;
+    font-weight: bold;
+} 
+
+.background-color {
+    background-color: #E5E5E5 !important;
+}
+
+#kooxbus {
+    animation: 1.2s spawn_up;
+}
+
+#kooxtitle {
+    animation: 0.8s spawn_up;
+}
+
+.card {
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-10px)
+}
+
+@keyframes spawn_up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
