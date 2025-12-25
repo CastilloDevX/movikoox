@@ -141,8 +141,6 @@ Calcula la parada más cercana a una ubicación geográfica usando distancia Hav
 }
 ```
 
----
-
 ### 🔹 4. Obtener paradas por nombre de ruta
 
 ```
@@ -262,6 +260,15 @@ El resultado se divide en **segmentos entendibles**:
   }
 }
 ```
+
+### 🔹 6. Obtener las rutas de cada bus.
+
+```
+GET /api/v1/rutas
+```
+
+**Descripción:**
+Devuelve todas las rutas de cada camión de forma secuencial, obtienes una lista de todos los KO'OX y en cada una tendras las paradas en un array
 
 ## ✅ ¿Por qué este algoritmo es ideal para el proyecto?
 
