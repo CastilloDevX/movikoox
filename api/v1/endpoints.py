@@ -6,7 +6,8 @@ from .data import (
     ROUND_DECIMALS, 
     WALK_KMH, 
     BUS_KMH, 
-    stops_data
+    stops_data,
+    routes_data,
 )
 
 from .utils import (
@@ -155,6 +156,28 @@ def instrucciones():
             "bus_minutes": round(total_bus_minutes, 2),
             "total_minutes": round(total_minutes, 2)
         }
+    })
+
+@api_v1.route("/rutas")
+def get_rutas():
+    rutas_response = []
+
+    for ruta in routes_data:
+        paradas_full = []
+
+        for stop_id in ruta.get("paradas", []):
+            stop = stops_by_id.get(int(stop_id))
+            if stop:
+                paradas_full.append(stop)
+
+        rutas_response.append({
+            "nombre": ruta.get("nombre"),
+            "paradas": paradas_full
+        })
+
+    return jsonify({
+        "ok": True,
+        "body": rutas_response
     })
 
 
