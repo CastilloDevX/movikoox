@@ -61,3 +61,13 @@ body {
         transform: translateY(0px);
     }
 }
+
+.img-styled-color {
+  filter: brightness(0) saturate(100%)
+          invert(18%)
+          sepia(35%)
+          saturate(3500%)
+          hue-rotate(335deg)
+          brightness(95%)
+          contrast(95%);
+}
