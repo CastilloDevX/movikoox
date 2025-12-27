@@ -285,7 +285,226 @@ Es una solución **robusta, extensible y realista** para transporte público urb
 * ⏰ ETA por hora del día
 * 📄 Documentación OpenAPI / Swagger
 
-## 👨‍💻 Autor
+---
+# 📱 Movikoox – Flutter Como extensión Frontend (Andriod, IOs y Web)
+
+Además de la API REST, MOVIKOOX cuenta con una **aplicación frontend desarrollada en Flutter**, ubicada dentro del mismo repositorio, en la carpeta `mobile/`.
+
+Esta app consume directamente la API Flask para mostrar:
+
+* 📍 Ubicación actual del usuario
+* 🚌 Paradero más cercano
+* 🗺️ Mapa interactivo
+* 📊 Información estructurada de rutas e instrucciones
+
+La arquitectura está diseñada para ser **modular, escalable y limpia**, separando claramente **UI, modelos y servicios**.
+
+## 📁 Estructura del Frontend (Flutter)
+
+```
+mobile/
+│
+├── android/              # Configuración Android
+├── ios/                  # Configuración iOS
+├── linux/                # Desktop Linux
+├── macos/                # Desktop macOS
+├── windows/              # Desktop Windows
+├── web/                  # Web (Flutter Web)
+│
+├── assets/
+│   └── icons/
+│       ├── bus_stop.png
+│       ├── kooxbus_icon.png
+│       ├── location.png
+│       ├── movikoox_logo.png
+│       └── walk.png
+│
+├── lib/
+│   ├── main.dart         # Punto de entrada de la app
+│
+│   ├── ui/               # Pantallas (UI)
+│   │   └── home_screen.dart
+│
+│   ├── services/         # Comunicación con la API
+│   │   ├── api_service.dart
+│   │   └── geocode_service.dart
+│
+│   ├── models/           # Modelos de datos
+│   │   ├── api_response.dart
+│   │   ├── instruccion_model.dart
+│   │   ├── parada_model.dart
+│   │   ├── ruta_model.dart
+│   │   └── summary_model.dart
+│
+│   └── constants/ (opcional futuro)
+│
+├── pubspec.yaml
+└── README.md
+```
+
+## 🧱 Arquitectura del Frontend
+
+La app sigue una arquitectura **por capas**, inspirada en Clean Architecture ligera:
+
+```
+UI (Screens)
+   ↓
+Services (HTTP / lógica externa)
+   ↓
+Models (Estructuras de datos)
+```
+
+Esto permite:
+
+* Separación clara de responsabilidades
+* Reutilización de lógica
+* Fácil mantenimiento y escalado
+
+## 🎨 UI (Pantallas)
+
+### 📍 `home_screen.dart`
+
+Pantalla principal de la aplicación.
+
+Responsabilidades:
+
+* Solicitar permisos de ubicación
+* Obtener la posición actual del usuario
+* Mostrar mapa con `flutter_map` (OpenStreetMap)
+* Mostrar el paradero más cercano
+* Permitir refrescar datos y recentrar el mapa
+
+Incluye:
+
+* Manejo explícito de errores de ubicación
+* Vista alternativa cuando el usuario niega permisos
+* Integración directa con los servicios
+
+---
+
+## 🌐 Services (Comunicación con la API)
+
+### 🔹 `api_service.dart`
+
+Encargado de **toda la comunicación HTTP con la API Flask**.
+
+Funciones típicas:
+
+* Obtener paradero más cercano
+* Obtener rutas
+* Obtener instrucciones de viaje
+
+Ejemplo conceptual:
+
+```dart
+ApiService.getParadaCercana(lat, lon);
+```
+
+Beneficios:
+
+* Centraliza endpoints
+* Evita lógica HTTP en la UI
+* Facilita cambios de backend
+
+### 🔹 `geocode_service.dart`
+
+Servicio auxiliar para:
+
+* Conversión de coordenadas a direcciones
+* (Futuro) Autocompletado de destinos
+
+Permite desacoplar la lógica de geocodificación de la UI.
+
+## 📦 Models (Modelado de Datos)
+
+Los modelos reflejan **exactamente** la estructura de respuesta del backend.
+
+### 📌 Modelos principales
+
+| Modelo             | Descripción                       |
+| ------------------ | --------------------------------- |
+| `ParadaModel`      | Información de una parada         |
+| `RutaModel`        | Información de una ruta de camión |
+| `InstruccionModel` | Segmentos de caminata y camión    |
+| `SummaryModel`     | Resumen total del viaje           |
+| `ApiResponse`      | Envoltura estándar de respuestas  |
+
+Ejemplo:
+
+```dart
+InstruccionModel(
+  type: "bus",
+  bus: "Koox 01 Eje Principal",
+  minutes: 8.6
+)
+```
+
+Ventajas:
+
+* Tipado fuerte
+* Evita errores por claves mal escritas
+* Facilita renderizado en UI
+
+---
+
+## 🗺️ Mapas y Ubicación
+
+La app utiliza:
+
+* `flutter_map` + OpenStreetMap
+* `geolocator` para ubicación
+* Soporte para:
+
+  * Android
+  * iOS
+  * Web
+  * Desktop
+
+### 🧠 Estrategia de ubicación
+
+* Si el usuario **acepta permisos** → ubicación real
+* Si los **rechaza** → pantalla explicativa con botón para reintentar
+* No se usa fallback silencioso (mejor UX y debugging)
+
+## 🔌 Comunicación Backend ↔ Frontend
+
+El frontend **no depende de servicios externos**.
+
+```
+Flutter App
+   ↓ HTTP
+Flask API (MOVIKOOX)
+   ↓
+Algoritmo de rutas
+```
+
+Esto garantiza:
+
+* Control total del sistema
+* Consistencia de datos
+* Independencia de APIs de terceros
+
+## 🚀 Estado actual del Frontend
+
+✔️ Arquitectura estable
+✔️ Integración con API
+✔️ Manejo de ubicación
+✔️ Mapa funcional
+✔️ Paradero más cercano
+
+
+## 🧠 Filosofía del Proyecto
+
+MOVIKOOX no es solo una API o una app, es un **sistema completo**:
+
+* Backend: lógica inteligente de transporte
+* Frontend: experiencia clara y humana
+* Datos: controlados y realistas
+* Arquitectura: pensada para crecer
+
+
+## 👨‍💻 Integrantes
 
 Proyecto desarrollado como sistema de rutas inteligentes para transporte público de Campeche.
-> **Jose Manuel Castillo Queh**
+- > **Jose Manuel Castillo Queh (Creador)**
+- > **Marcos Osorio Rodrigues Piña**
