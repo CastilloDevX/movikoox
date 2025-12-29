@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'ui/home_screen.dart';
+import 'ui/search.dart';
 
 void main() {
   runApp(const KooxApp());
@@ -11,7 +12,7 @@ class KooxApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "MOVIKOOX",
+      title: "Movikoox",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
@@ -20,7 +21,11 @@ class KooxApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: const Color(0xFFF9FAFB),
       ),
-      home: const HomeScreen(),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => const HomeScreen(),
+        "/search": (context) => const SearchScreen(),
+      },
     );
   }
 }
