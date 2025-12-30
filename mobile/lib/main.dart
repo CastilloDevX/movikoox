@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ui/home_screen.dart';
-import 'ui/search.dart';
+import 'ui/search_screen.dart';
+import 'ui/instructions_screen.dart';
 
 void main() {
   runApp(const KooxApp());
@@ -25,6 +26,7 @@ class KooxApp extends StatelessWidget {
       routes: {
         "/": (context) => const HomeScreen(),
         "/search": (context) => const SearchScreen(),
+        "/instructions": (context) => const InstructionsScreen(),
       },
     );
   }

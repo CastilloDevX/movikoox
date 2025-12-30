@@ -103,16 +103,14 @@ class _SearchScreenState extends State<SearchScreen> {
     final lat = HomeScreen.lastKnownLat;
     final lon = HomeScreen.lastKnownLon;
 
-    final address =
-        await _geocodeService.getAddressFromCoordinates(lat, lon);
+    final address = await _geocodeService.getAddressFromCoordinates(lat, lon);
 
     if (!mounted) return;
 
     setState(() {
       _isLoading = false;
       if (address != null) {
-        _startController.text =
-            address.split(',').take(2).join(',').trim();
+        _startController.text = address.split(',').take(2).join(',').trim();
         _startLat = lat;
         _startLon = lon;
       }
@@ -166,8 +164,10 @@ class _SearchScreenState extends State<SearchScreen> {
                           overflow: TextOverflow.ellipsis,
                         ),
                         onTap: () {
-                          controller.text =
-                              item["display_name"].split(',').first.trim();
+                          controller.text = item["display_name"]
+                              .split(',')
+                              .first
+                              .trim();
 
                           setState(() {
                             if (isStart) {
@@ -249,25 +249,27 @@ class _SearchScreenState extends State<SearchScreen> {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: isFormValid ? () {
-                  Navigator.pop(context, {
-                    "start": {
-                      "lat": _startLat,
-                      "lon": _startLon,
-                    },
-                    "end": {
-                      "lat": _endLat,
-                      "lon": _endLon,
-                    }
-                  });
-                } : null,
+                onPressed: isFormValid
+                    ? () {
+                        Navigator.pushNamed(
+                          context,
+                          "/instructions",
+                          arguments: {
+                            "startLat": _startLat,
+                            "startLon": _startLon,
+                            "endLat": _endLat,
+                            "endLon": _endLon,
+                            "destName": _endController.text,
+                          },
+                        );
+                      }
+                    : null,
+
                 style: ElevatedButton.styleFrom(
                   backgroundColor: isFormValid
                       ? const Color(0xFF922E42)
                       : Colors.grey.shade400,
-                  foregroundColor: isFormValid
-                      ? Colors.white
-                      : Colors.white54,
+                  foregroundColor: isFormValid ? Colors.white : Colors.white54,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
@@ -275,7 +277,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 ),
                 child: const Text(
                   "Buscar ruta",
-                  style: TextStyle(fontSize: 16),
+                  style: TextStyle(fontSize: 20),
                 ),
               ),
             ),
@@ -315,9 +317,7 @@ class _SearchScreenState extends State<SearchScreen> {
               : null,
           filled: true,
           fillColor: Colors.white,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
         ),
       ),
     );
