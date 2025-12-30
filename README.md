@@ -445,7 +445,6 @@ Ventajas:
 * Evita errores por claves mal escritas
 * Facilita renderizado en UI
 
----
 
 ## 🗺️ Mapas y Ubicación
 
@@ -502,9 +501,82 @@ MOVIKOOX no es solo una API o una app, es un **sistema completo**:
 * Datos: controlados y realistas
 * Arquitectura: pensada para crecer
 
+## 🎯 Icono de la Aplicación (Flutter – Android)
 
-## 👨‍💻 Integrantes
+El frontend Flutter de MOVIKOOX utiliza un **icono personalizado** para la aplicación en Android, generado automáticamente usando el paquete `flutter_launcher_icons`.
+
+### 📦 Dependencia utilizada
+
+En el archivo `pubspec.yaml` se incluye:
+
+```yaml
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+```
+### 🖼️ Imagen base del icono
+
+El icono principal debe cumplir con las siguientes características:
+
+* Formato: **PNG**
+* Tamaño recomendado: **1024 × 1024**
+* Imagen cuadrada
+* Sin bordes transparentes excesivos
+
+Ubicación del archivo:
+
+```
+assets/icon/app_icon.png
+```
+
+Y debe estar registrado en `pubspec.yaml`:
+
+```yaml
+flutter:
+  assets:
+    - assets/icon/
+```
+
+### ⚙️ Configuración de `flutter_launcher_icons`
+
+En el mismo archivo `pubspec.yaml` se agrega la configuración:
+
+```yaml
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/app_icon.png"
+```
+
+> Actualmente el proyecto genera iconos **solo para Android**.
+
+### 🚀 Generación de iconos
+
+Desde la raíz del proyecto Flutter (`mobile/`):
+
+```bash
+flutter pub get
+flutter pub run flutter_launcher_icons
+```
+
+Este comando genera automáticamente **todos los tamaños necesarios** en:
+
+```
+android/app/src/main/res/
+```
+
+### 🧹 Recomendación final
+
+Después de generar los iconos, se recomienda limpiar y volver a ejecutar la app:
+
+```bash
+flutter clean
+flutter run
+```
+
+Si el icono no se actualiza inmediatamente, reinstalar la app en el dispositivo o emulador.
+
+
+# 👨‍💻 Creador
 
 Proyecto desarrollado como sistema de rutas inteligentes para transporte público de Campeche.
-- > **Jose Manuel Castillo Queh (Creador)**
-- > **Marcos Osorio Rodrigues Piña**
+- > **Jose Manuel Castillo Queh**
