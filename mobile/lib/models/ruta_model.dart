@@ -1,16 +1,11 @@
+import 'parada_model.dart';
+
 class Ruta {
   final String nombre;
-  final List<String> paradas;
+  final List<Parada> paradas;
 
   Ruta({
     required this.nombre,
     required this.paradas,
   });
-
-  factory Ruta.fromJson(Map<String, dynamic> json) {
-    return Ruta(
-      nombre: json['nombre'],
-      paradas: List<String>.from(json['paradas']),
-    );
-  }
 }

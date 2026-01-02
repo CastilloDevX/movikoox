@@ -311,6 +311,26 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
 
           // -----------------------------
+          // BUSES
+          // -----------------------------
+          Positioned(
+            bottom: 260,
+            right: 20,
+            child: FloatingActionButton(
+              backgroundColor: const Color(0xFF922E42),
+              onPressed: () {
+                Navigator.pushNamed(context, "/buses");
+              },
+              child: Image.asset(
+                "assets/icons/bus_stop.png",
+                width: 24,
+                height: 24,
+                color: Colors.white,
+              ),
+            ),
+          ),
+
+          // -----------------------------
           // BOTTOM PANEL
           // -----------------------------
           Positioned(

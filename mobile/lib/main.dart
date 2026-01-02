@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'ui/home_screen.dart';
 import 'ui/search_screen.dart';
 import 'ui/instructions_screen.dart';
+import 'ui/buses_screen.dart';
+import 'ui/buses_map_screen.dart';
 
 void main() {
   runApp(const KooxApp());
@@ -27,6 +29,8 @@ class KooxApp extends StatelessWidget {
         "/": (context) => const HomeScreen(),
         "/search": (context) => const SearchScreen(),
         "/instructions": (context) => const InstructionsScreen(),
+        "/buses": (context) => const BusesScreen(),
+        "/paradas": (context) => const BusesMapScreen(),
       },
     );
   }

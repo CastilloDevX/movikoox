@@ -17,9 +17,7 @@ class ApiService {
     final response = await http.get(Uri.parse('$baseUrl/paradas'));
     final data = jsonDecode(response.body);
 
-    return List<Parada>.from(
-      data.map((e) => Parada.fromJson(e)),
-    );
+    return List<Parada>.from(data.map((e) => Parada.fromJson(e)));
   }
 
   static Future<Parada> getParadaById(String id) async {
@@ -28,7 +26,9 @@ class ApiService {
   }
 
   static Future<Map<String, dynamic>> getParadaCercana(
-      double lat, double lon) async {
+    double lat,
+    double lon,
+  ) async {
     final response = await http.get(
       Uri.parse('$baseUrl/paradas/cercana?latitud=$lat&longitud=$lon'),
     );
@@ -36,30 +36,36 @@ class ApiService {
   }
 
   static Future<List<Parada>> getParadasPorRuta(String nombre) async {
-    final response =
-        await http.get(Uri.parse('$baseUrl/paradas/bus/$nombre'));
-    final data = jsonDecode(response.body);
+    final response = await http.get(Uri.parse('$baseUrl/paradas/bus/$nombre'));
 
-    return List<Parada>.from(
-      data.map((e) => Parada.fromJson(e)),
-    );
+    final Map<String, dynamic> json = jsonDecode(response.body);
+
+    final List<dynamic> body = json['body'];
+
+    return body.map<Parada>((e) => Parada.fromJson(e)).toList();
   }
 
   // -------------------------
   // RUTAS
   // -------------------------
-
   static Future<List<Ruta>> getRutas() async {
     final response = await http.get(Uri.parse('$baseUrl/rutas'));
-    final data = jsonDecode(response.body);
+    final Map<String, dynamic> json = jsonDecode(response.body);
 
-    return List<Ruta>.from(
-      data.map((e) => Ruta.fromJson(e)),
-    );
+    final List<dynamic> body = json['body'];
+
+    return body.map<Ruta>((rutaJson) {
+      return Ruta(
+        nombre: rutaJson['nombre'],
+        paradas: (rutaJson['paradas'] as List)
+            .map((p) => Parada.fromJson(p))
+            .toList(),
+      );
+    }).toList();
   }
 
   // -------------------------
-  // INSTRUCCIONES (CORE)
+  // INSTRUCCIONES
   // -------------------------
 
   static Future<Map<String, dynamic>> getInstrucciones({
@@ -79,9 +85,7 @@ class ApiService {
 
     return {
       'instructions': List<Instruction>.from(
-        json['instructions'].map(
-          (e) => Instruction.fromJson(e),
-        ),
+        json['instructions'].map((e) => Instruction.fromJson(e)),
       ),
       'summary': Summary.fromJson(json['summary']),
     };
