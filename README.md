@@ -580,3 +580,193 @@ Si el icono no se actualiza inmediatamente, reinstalar la app en el dispositivo 
 
 Proyecto desarrollado como sistema de rutas inteligentes para transporte público de Campeche.
 - > **Jose Manuel Castillo Queh**
+
+# Notas para producción
+
+# Movikoox – Build y Deploy (Notas técnicas)
+
+---
+
+## 📱 1. Generar APK de Flutter (Producción)
+
+> Usado para distribuir la app Android directamente desde la web oficial.
+
+### 📌 Requisitos previos
+
+* Flutter instalado
+* Android SDK configurado
+* Permisos de Internet y ubicación en `AndroidManifest.xml`
+
+### 📌 Comando oficial
+
+Desde la carpeta `mobile/`:
+
+```bash
+flutter clean
+flutter pub get
+flutter build apk --release
+```
+
+### 📦 Resultado
+
+El APK se genera en:
+
+```
+mobile/build/app/outputs/flutter-apk/app-release.apk
+```
+
+---
+
+## 🌐 2. Copiar APK al backend (Flask)
+
+Para que Flask pueda servir el APK correctamente, **debe estar dentro de `static/`**.
+
+### 📌 Ubicación recomendada
+
+```
+static/apk/app-release.apk
+```
+
+### 📌 Comando
+
+Desde la raíz del proyecto:
+
+```bash
+mkdir -p static/apk
+cp mobile/build/app/outputs/flutter-apk/app-release.apk static/apk/
+```
+
+### 📌 Uso en HTML
+
+```html
+<a href="{{ url_for('static', filename='apk/app-release.apk') }}" download>
+  Descargar APK
+</a>
+```
+
+---
+
+## 💻 3. Build de Flutter Web
+
+Flutter Web se compila a **HTML, CSS y JavaScript**. Vercel solo sirve archivos estáticos.
+
+### 📌 Habilitar web (una sola vez)
+
+```bash
+flutter config --enable-web
+```
+
+### 📌 Build web
+
+Desde `mobile/`:
+
+```bash
+flutter build web --release
+```
+
+### 📂 Resultado
+
+```
+mobile/build/web/
+```
+
+---
+
+## 🌍 4. Preparar carpeta Web (IMPORTANTE)
+
+La web **NO debe vivir dentro del backend Flask**.
+
+Se recomienda crear una carpeta **independiente** para Vercel.
+
+### 📌 Comandos requeridos
+
+```bash
+mkdir -p ../web
+cp -r build/web/* ../web/
+```
+
+### 📂 Estructura final
+
+```
+project-root/
+├── api/            (Flask API)
+├── static/         (APK, imágenes, css)
+├── templates/      (Web Flask)
+├── mobile/         (Flutter App)
+├── web/            (Flutter Web para Vercel)
+│   ├── index.html
+│   ├── main.dart.js
+│   └── assets/
+```
+
+---
+
+## 🚀 5. Deploy Flutter Web en Vercel
+
+### 📌 Dominio
+
+Se recomienda usar un dominio separado:
+
+```
+https://movikooxweb.vercel.app
+```
+
+Esto evita conflictos con el backend.
+
+### 📌 Configuración Vercel
+
+* Framework: **Other**
+* Build Command: *(vacío)*
+* Output Directory: `web`
+
+### 📄 `vercel.json`
+
+```json
+{
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
+```
+
+---
+
+## 🔗 6. Conexión con el Backend
+
+Flutter Web **solo debe consumir la API**, no servir archivos.
+
+### 📌 Base URL correcta
+
+```dart
+static const String baseUrl = "https://movikoox.vercel.app/api/v1";
+```
+
+✔ Correcto usar **solo el endpoint del backend**
+
+---
+
+## ✅ 7. Resumen rápido
+
+### Android APK
+
+```bash
+flutter build apk --release
+cp mobile/build/app/outputs/flutter-apk/app-release.apk static/apk/
+```
+
+### Flutter Web
+
+```bash
+flutter build web --release
+mkdir -p ../web
+cp -r build/web/* ../web/
+```
+
+### Deploy
+
+* Backend → `movikoox.vercel.app`
+* Web → `movikooxweb.vercel.app`
+
+---
+
+Movikoox queda listo para producción real.
