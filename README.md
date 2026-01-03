@@ -633,13 +633,14 @@ Desde la raíz del proyecto:
 
 ```bash
 mkdir -p static/apk
-cp mobile/build/app/outputs/flutter-apk/app-release.apk static/apk/
+cd ..
+cp mobile/build/app/outputs/flutter-apk/app-release.apk static/apk/movikoox.apk
 ```
 
 ### 📌 Uso en HTML
 
 ```html
-<a href="{{ url_for('static', filename='apk/app-release.apk') }}" download>
+<a href="{{ url_for('static', filename='apk/movikoox.apk') }}" download>
   Descargar APK
 </a>
 ```
