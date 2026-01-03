@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import '../services/geocode_service.dart';
-import 'home_screen.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -100,24 +100,159 @@ class _SearchScreenState extends State<SearchScreen> {
   Future<void> _useCurrentLocation() async {
     setState(() => _isLoading = true);
 
-    final lat = HomeScreen.lastKnownLat;
-    final lon = HomeScreen.lastKnownLon;
-
-    final address = await _geocodeService.getAddressFromCoordinates(lat, lon);
-
-    if (!mounted) return;
-
-    setState(() {
-      _isLoading = false;
-      if (address != null) {
-        _startController.text = address.split(',').take(2).join(',').trim();
-        _startLat = lat;
-        _startLon = lon;
+    try {
+      // Verificar si el servicio de ubicación está habilitado
+      bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+      if (!serviceEnabled) {
+        if (!mounted) return;
+        setState(() => _isLoading = false);
+        
+        _showLocationDialog(
+          title: "GPS desactivado",
+          message: "Activa el GPS para usar tu ubicación actual",
+          actionText: "Activar GPS",
+          onAction: () async {
+            await Geolocator.openLocationSettings();
+          },
+        );
+        return;
       }
-    });
 
-    _removeOverlay();
-    FocusScope.of(context).unfocus();
+      // Verificar permisos
+      LocationPermission permission = await Geolocator.checkPermission();
+      
+      if (permission == LocationPermission.denied) {
+        permission = await Geolocator.requestPermission();
+        if (permission == LocationPermission.denied) {
+          if (!mounted) return;
+          setState(() => _isLoading = false);
+          
+          _showLocationDialog(
+            title: "Permiso denegado",
+            message: "Necesitamos acceso a tu ubicación para usar esta función",
+            actionText: "Dar permiso",
+            onAction: () async {
+              permission = await Geolocator.requestPermission();
+              if (permission == LocationPermission.whileInUse || 
+                  permission == LocationPermission.always) {
+                _useCurrentLocation(); // Reintentar
+              }
+            },
+          );
+          return;
+        }
+      }
+
+      if (permission == LocationPermission.deniedForever) {
+        if (!mounted) return;
+        setState(() => _isLoading = false);
+        
+        _showLocationDialog(
+          title: "Permiso denegado",
+          message: "Activa el permiso de ubicación en la configuración de la app",
+          actionText: "Abrir configuración",
+          onAction: () async {
+            await Geolocator.openAppSettings();
+          },
+        );
+        return;
+      }
+
+      // OBTENER LA UBICACIÓN ACTUAL EN TIEMPO REAL
+      Position position = await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high,
+      );
+
+      final lat = position.latitude;
+      final lon = position.longitude;
+
+      // Obtener la dirección
+      final address = await _geocodeService.getAddressFromCoordinates(lat, lon);
+
+      if (!mounted) return;
+
+      setState(() {
+        _isLoading = false;
+        if (address != null) {
+          _startController.text = address.split(',').take(2).join(',').trim();
+          _startLat = lat;
+          _startLon = lon;
+        } else {
+          // Si falla la geocodificación, usar coordenadas pero sin dirección
+          _startController.text = "Mi ubicación actual";
+          _startLat = lat;
+          _startLon = lon;
+        }
+      });
+
+      _removeOverlay();
+      FocusScope.of(context).unfocus();
+
+      // Mostrar confirmación
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("Ubicación obtenida correctamente"),
+          backgroundColor: Colors.green,
+          duration: Duration(seconds: 2),
+        ),
+      );
+
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("Error al obtener ubicación: ${e.toString()}"),
+          backgroundColor: Colors.red,
+          duration: const Duration(seconds: 3),
+        ),
+      );
+    }
+  }
+
+  void _showLocationDialog({
+    required String title,
+    required String message,
+    required String actionText,
+    required VoidCallback onAction,
+  }) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Row(
+          children: [
+            const Icon(
+              Icons.location_off,
+              color: Color(0xFF922E42),
+            ),
+            const SizedBox(width: 12),
+            Expanded(child: Text(title)),
+          ],
+        ),
+        content: Text(message),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text(
+              "Cancelar",
+              style: TextStyle(color: Colors.grey),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+              onAction();
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFF922E42),
+              foregroundColor: Colors.white,
+            ),
+            child: Text(actionText),
+          ),
+        ],
+      ),
+    );
   }
 
   // -----------------------------
@@ -264,7 +399,6 @@ class _SearchScreenState extends State<SearchScreen> {
                         );
                       }
                     : null,
-
                 style: ElevatedButton.styleFrom(
                   backgroundColor: isFormValid
                       ? const Color(0xFF922E42)

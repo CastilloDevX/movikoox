@@ -8,6 +8,15 @@ import 'package:geolocator/geolocator.dart';
 import '../services/api_service.dart';
 import '../services/geocode_service.dart';
 
+enum LocationStatus {
+  loading,
+  success,
+  serviceDisabled,
+  permissionDenied,
+  permissionDeniedForever,
+  error,
+}
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -25,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
   LatLng? _lastGeocodedPosition;
 
   bool loading = true;
+  LocationStatus locationStatus = LocationStatus.loading;
 
   LatLng? currentPosition;
   LatLng? closestStopPosition;
@@ -34,6 +44,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Map<String, dynamic>? closestStop;
   String? closestStopDistanceMeters;
+
+  // Coordenadas por defecto para Campeche (solo para centrar el mapa)
+  static const LatLng _defaultMapCenter = LatLng(19.845, -90.525);
 
   @override
   void initState() {
@@ -55,13 +68,14 @@ class _HomeScreenState extends State<HomeScreen> {
       await _initWebLocation();
     } else {
       await _initMobileLocation();
-      _startRealtimeLocation(); // realtime
+      if (locationStatus == LocationStatus.success) {
+        _startRealtimeLocation();
+      }
     }
 
     if (currentPosition != null) {
       HomeScreen.lastKnownLat = currentPosition!.latitude;
       HomeScreen.lastKnownLon = currentPosition!.longitude;
-
       await fetchClosestStop();
     }
 
@@ -77,15 +91,18 @@ class _HomeScreenState extends State<HomeScreen> {
         desiredAccuracy: LocationAccuracy.low,
       );
       currentPosition = LatLng(pos.latitude, pos.longitude);
-    } catch (_) {
-      currentPosition = const LatLng(19.845, -90.525);
+      locationStatus = LocationStatus.success;
+    } catch (e) {
+      locationStatus = LocationStatus.error;
+      currentPosition = null;
     }
   }
 
   Future<void> _initMobileLocation() async {
     bool enabled = await Geolocator.isLocationServiceEnabled();
     if (!enabled) {
-      currentPosition = const LatLng(19.845, -90.525);
+      locationStatus = LocationStatus.serviceDisabled;
+      currentPosition = null;
       return;
     }
 
@@ -94,17 +111,28 @@ class _HomeScreenState extends State<HomeScreen> {
       permission = await Geolocator.requestPermission();
     }
 
-    if (permission == LocationPermission.denied ||
-        permission == LocationPermission.deniedForever) {
-      currentPosition = const LatLng(19.845, -90.525);
+    if (permission == LocationPermission.deniedForever) {
+      locationStatus = LocationStatus.permissionDeniedForever;
+      currentPosition = null;
       return;
     }
 
-    final pos = await Geolocator.getCurrentPosition(
-      desiredAccuracy: LocationAccuracy.high,
-    );
+    if (permission == LocationPermission.denied) {
+      locationStatus = LocationStatus.permissionDenied;
+      currentPosition = null;
+      return;
+    }
 
-    currentPosition = LatLng(pos.latitude, pos.longitude);
+    try {
+      final pos = await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high,
+      );
+      currentPosition = LatLng(pos.latitude, pos.longitude);
+      locationStatus = LocationStatus.success;
+    } catch (e) {
+      locationStatus = LocationStatus.error;
+      currentPosition = null;
+    }
   }
 
   Future<void> _updateUserStreetIfNeeded(LatLng newPosition) async {
@@ -133,22 +161,24 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _startRealtimeLocation() {
-    _positionStream =
-        Geolocator.getPositionStream(
-          locationSettings: const LocationSettings(
-            accuracy: LocationAccuracy.best,
-            distanceFilter: 3,
-          ),
-        ).listen((Position pos) {
-          final newPosition = LatLng(pos.latitude, pos.longitude);
+    _positionStream = Geolocator.getPositionStream(
+      locationSettings: const LocationSettings(
+        accuracy: LocationAccuracy.best,
+        distanceFilter: 3,
+      ),
+    ).listen((Position pos) {
+      final newPosition = LatLng(pos.latitude, pos.longitude);
 
-          setState(() {
-            currentPosition = newPosition;
-          });
+      setState(() {
+        currentPosition = newPosition;
+        if (locationStatus != LocationStatus.success) {
+          locationStatus = LocationStatus.success;
+        }
+      });
 
-          _updateUserStreetIfNeeded(newPosition);
-          fetchClosestStop();
-        });
+      _updateUserStreetIfNeeded(newPosition);
+      fetchClosestStop();
+    });
   }
 
   // -----------------------------
@@ -177,13 +207,199 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   // -----------------------------
+  // HANDLE LOCATION ACTIONS
+  // -----------------------------
+  Future<void> _handleLocationAction() async {
+    switch (locationStatus) {
+      case LocationStatus.serviceDisabled:
+        await Geolocator.openLocationSettings();
+        break;
+      case LocationStatus.permissionDenied:
+        setState(() => loading = true);
+        await _initMobileLocation();
+        if (locationStatus == LocationStatus.success && currentPosition != null) {
+          _startRealtimeLocation();
+          await fetchClosestStop();
+        }
+        setState(() => loading = false);
+        break;
+      case LocationStatus.permissionDeniedForever:
+        await Geolocator.openAppSettings();
+        break;
+      default:
+        break;
+    }
+  }
+
+  // -----------------------------
+  // UI BUILDERS
+  // -----------------------------
+  Widget _buildLocationErrorCard() {
+    String title;
+    String message;
+    String buttonText;
+    IconData icon;
+
+    switch (locationStatus) {
+      case LocationStatus.serviceDisabled:
+        title = "Ubicación desactivada";
+        message = "Activa el GPS para ver paraderos cercanos";
+        buttonText = "Activar ubicación";
+        icon = Icons.location_off;
+        break;
+      case LocationStatus.permissionDenied:
+        title = "Permiso de ubicación";
+        message = "Necesitamos acceso a tu ubicación";
+        buttonText = "Dar permiso";
+        icon = Icons.location_disabled;
+        break;
+      case LocationStatus.permissionDeniedForever:
+        title = "Permiso denegado";
+        message = "Activa el permiso en configuración";
+        buttonText = "Abrir configuración";
+        icon = Icons.settings;
+        break;
+      default:
+        title = "Error de ubicación";
+        message = "No pudimos obtener tu ubicación";
+        buttonText = "Reintentar";
+        icon = Icons.error_outline;
+    }
+
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: const [
+          BoxShadow(blurRadius: 8, color: Colors.black26),
+        ],
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF922E42).withOpacity(0.1),
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  icon,
+                  color: const Color(0xFF922E42),
+                  size: 28,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      message,
+                      style: const TextStyle(
+                        color: Colors.black54,
+                        fontSize: 13,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: _handleLocationAction,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF922E42),
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: Text(buttonText),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildClosestStopCard() {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: const [
+          BoxShadow(blurRadius: 8, color: Colors.black26),
+        ],
+      ),
+      child: Row(
+        children: [
+          Image.asset(
+            "assets/icons/kooxbus_icon.png",
+            width: 50,
+            height: 50,
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  "Paradero más cercano",
+                  style: TextStyle(color: Colors.black54, fontSize: 14),
+                ),
+                Text(
+                  closestStop?["body"]?["nombre"] ?? "Buscando...",
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  closestStopDistanceMeters ?? "Cargando...",
+                  style: const TextStyle(
+                    color: Colors.black54,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // -----------------------------
   // UI
   // -----------------------------
   @override
   Widget build(BuildContext context) {
-    if (loading || currentPosition == null) {
+    if (loading) {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
+
+    // Determinar el centro del mapa
+    LatLng mapCenter = currentPosition ?? _defaultMapCenter;
 
     return Scaffold(
       body: Stack(
@@ -191,8 +407,8 @@ class _HomeScreenState extends State<HomeScreen> {
           FlutterMap(
             mapController: _mapController,
             options: MapOptions(
-              initialCenter: currentPosition!,
-              initialZoom: 16,
+              initialCenter: mapCenter,
+              initialZoom: locationStatus == LocationStatus.success ? 16 : 13,
             ),
             children: [
               TileLayer(
@@ -201,117 +417,74 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
               // -----------------------------
-              // MARKERS
+              // MARKERS (solo si hay ubicación exitosa)
               // -----------------------------
-              MarkerLayer(
-                markers: [
-                  // USER REALTIME LOCATION
-                  Marker(
-                    point: currentPosition!,
-                    width: 20,
-                    height: 20,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.white,
-                        border: Border.all(color: Colors.blue, width: 4),
-                      ),
-                    ),
-                  ),
-
-                  // CLOSEST STOP
-                  if (closestStopPosition != null)
-                    Marker(
-                      point: closestStopPosition!,
-                      width: 30,
-                      height: 30,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF922E42),
-                          shape: BoxShape.circle,
-                          border: Border.all(color: Colors.white, width: 3),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Colors.black26,
-                              blurRadius: 6,
-                              offset: Offset(0, 3),
-                            ),
-                          ],
-                        ),
-                        child: Center(
-                          child: Image.asset(
-                            "assets/icons/bus_stop.png",
-                            width: 18,
-                            height: 18,
+              if (locationStatus == LocationStatus.success)
+                MarkerLayer(
+                  markers: [
+                    // USER REALTIME LOCATION
+                    if (currentPosition != null)
+                      Marker(
+                        point: currentPosition!,
+                        width: 20,
+                        height: 20,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
                             color: Colors.white,
+                            border: Border.all(color: Colors.blue, width: 4),
                           ),
                         ),
                       ),
-                    ),
-                ],
-              ),
+
+                    // CLOSEST STOP
+                    if (closestStopPosition != null)
+                      Marker(
+                        point: closestStopPosition!,
+                        width: 30,
+                        height: 30,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF922E42),
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white, width: 3),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Colors.black26,
+                                blurRadius: 6,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Center(
+                            child: Image.asset(
+                              "assets/icons/bus_stop.png",
+                              width: 18,
+                              height: 18,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
             ],
           ),
 
           // -----------------------------
-          // CLOSEST STOP CARD
+          // TOP CARD (Error o Success)
           // -----------------------------
           Positioned(
             top: 40,
             left: 20,
             right: 20,
-            child: Container(
-              padding: const EdgeInsets.all(14),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(16),
-                boxShadow: const [
-                  BoxShadow(blurRadius: 8, color: Colors.black26),
-                ],
-              ),
-              child: Row(
-                children: [
-                  Image.asset(
-                    "assets/icons/kooxbus_icon.png",
-                    width: 50,
-                    height: 50,
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          "Paradero más cercano",
-                          style: TextStyle(color: Colors.black54, fontSize: 14),
-                        ),
-                        Text(
-                          closestStop?["body"]?["nombre"] ?? "Buscando...",
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Text(
-                          closestStopDistanceMeters ?? "Cargando ...",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            child: locationStatus == LocationStatus.success
+                ? _buildClosestStopCard()
+                : _buildLocationErrorCard(),
           ),
 
           // -----------------------------
-          // BUSES
+          // BUSES BUTTON
           // -----------------------------
           Positioned(
             bottom: 260,
@@ -355,7 +528,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
 
-                  if (userStreetName != null) ...[
+                  if (userStreetName != null &&
+                      locationStatus == LocationStatus.success) ...[
                     const SizedBox(height: 6),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -371,7 +545,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             userStreetName!,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            textAlign: TextAlign.right,
+                            textAlign: TextAlign.left,
                             style: const TextStyle(
                               color: Colors.white70,
                               fontSize: 14,
@@ -404,12 +578,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton.icon(
-                      onPressed: () {
-                        _mapController.move(currentPosition!, 16);
-                      },
+                      onPressed: locationStatus == LocationStatus.success &&
+                              currentPosition != null
+                          ? () {
+                              _mapController.move(currentPosition!, 16);
+                            }
+                          : null,
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFFC2425C),
                         foregroundColor: Colors.white,
+                        disabledBackgroundColor: Colors.grey[400],
+                        disabledForegroundColor: Colors.grey[600],
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(14),
